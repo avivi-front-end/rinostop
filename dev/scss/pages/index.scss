@@ -1,0 +1,265 @@
+.indexPage {
+    padding-top: 136px;
+    overflow: hidden;
+
+    &__item {
+        width: 50%;
+        float: left
+    }
+    &__logo {
+        margin-bottom: 95px;
+        & span {
+            display: block;
+            width: 170px;
+            margin: 0 auto;
+            position: relative;
+            left: -7px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                @include sprite($rino-red-bg);
+                z-index: -1;
+                opacity: 0.5;
+                left: -153px;
+                top: -63px;
+            }
+        }
+        &--all span:before {
+            @include sprite($rino-blue-bg);
+        }
+        &--blue {
+            margin-bottom: 60px;
+            span {
+                width: 200px;
+                left: 6px;
+                top: -15px;
+
+                &:before {
+                    @include sprite($rino-blue-bg);
+                    left: -104px;
+                    top: -15px;
+                }
+            }
+
+        }
+    }
+    &__slogan {
+        font: 36px $GPB;
+        text-transform: uppercase;
+        color: #abe3d2;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 225px;
+
+        &--blue {
+            color: #fff;
+        }
+    }
+    &__info {
+        position: relative;
+        width: 431px;
+        margin: 0 auto;
+        padding: 54px 30px 67px;
+        line-height: 1.1;
+
+        &__textWrap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            display: block;
+            width: 431px;
+            height: 192px;
+            overflow: hidden;
+            z-index: -1;
+        }
+        &__text {
+            letter-spacing: -0.8px;
+            position: relative;
+            z-index: 2;
+
+            & span {
+                font-family: $GPBlack;
+                font-size: 14px;
+                letter-spacing: -0.1px;
+            }
+            & .green {
+                color: #17a64d;
+            }
+            & .red {
+                color: #f7242f;
+            }
+            & .lightBlue {
+                color: #0fb6ae;
+            }
+            & .darkBlue {
+                color: #068185;
+            }
+            &--sprey {
+                padding: 25px 10px;
+                text-align: center;
+                font-size: 14px;
+            }
+            & .italic {
+                font-style: italic;
+                margin-top: 10px;
+                font-size: 12px;
+                display: block;
+                font-family: $GP;
+            }
+        }
+        &__textBtn {
+            margin: 30px auto 0;
+            height: 33px;
+            width: 121px;
+            background: transparent;
+            text-transform: uppercase;
+            border: 2px solid #01a54f;
+            border-radius: 8px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #01a54f;
+            font-family: $GPM;
+            font-size: 16px;
+
+            &--blue {
+                border-color: #035994;
+                color: #035994;
+            }
+            &--pink {
+                border-color: #f69ab3;
+                color: #f69ab3;
+            }
+            &--greenBlue {
+                border-color: #11b1af;
+                color: #11b1af;
+            }
+            &--lightBlue {
+                border-color: #4b95cf;
+                color: #4b95cf;
+            }
+            &--purple {
+                border-color: #987cb7;
+                color: #987cb7;
+            }
+        }
+        &--sprey {
+            width: 430px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0;
+            padding-bottom: 20px;
+
+            .indexPage__info__textWrap {
+                width: 169px;
+            }
+        }
+        &--all {
+            width: 1054px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0;
+            padding-bottom: 20px;
+
+            .indexPage__info__textWrap {
+                width: 100%;
+            }
+        }
+        &__item {
+            width: 169px;
+        }
+    }
+    &__btnBlock {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 290px;
+        width: 170px;
+
+        & .testBtn {
+            color: #21a290;
+            background: #fff;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-size: 33px;
+            width: 170px;
+            text-align: center;
+            border: none;
+            font-family: $GPB;
+            line-height: 1;
+            padding: 15px 0;
+            box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
+        }
+        & span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -36px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    &--sprey {
+        .indexPage__item {
+            width: 100%;
+        }
+        .indexPage__logo {
+            margin-bottom: 20px;
+        }
+        .indexPage__slogan {
+            margin-bottom: 30px;
+            color: #fff;
+        }
+    }
+    &--all {
+        .indexPage__item {
+            width: 100%;
+        }
+        .indexPage__logo {
+            margin-bottom: 20px;
+        }
+        .indexPage__slogan {
+            margin-bottom: 10px;
+        }
+        .indexPage__info__sprey {
+            height: 280px;
+            width: 100%;
+            position: relative;
+
+            & img {
+                position: absolute;
+                max-width: none;
+                width: 275px;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -70px;
+            }
+        }
+        .indexPage__info__item {
+            width: 220px;
+        }
+        .indexPage__info__text {
+            padding-bottom: 65px;
+        }
+        .indexPage__info__textBtn {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 112px;
+        }
+    }
+
+}

@@ -1,0 +1,356 @@
+.rino10Top {
+    padding-top: 136px;
+
+    &__content {
+        position: relative;
+    }
+    &__logo {
+        display: block;
+        width: 170px;
+        margin: 0 auto 40px;
+        position: relative;
+        left: -7px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($rino-red-bg);
+            z-index: -1;
+            opacity: 0.5;
+            left: -153px;
+            top: -63px;
+        }
+    }
+    &__leftSide {
+        position: absolute;
+        left: 96px;
+        z-index: 2;
+        top: 259px;
+
+        &__text {
+            font-size: 43px;
+            font-family: $GPB;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            margin-bottom: 57px;
+        }
+        &__btn {
+            background: #fff;
+            position: relative;
+            margin: 0 auto;
+            display: block;
+
+            .downloadBtn__text {
+                color: #1a4aa1;
+            }
+            & svg {
+                stroke: #1a4aa1;
+            }
+        }
+    }
+    &__drug {
+        position: relative;
+
+        &__img {
+            height: 400px;
+            display: block;
+            & img {
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                top: -147px;
+            }
+        }
+        &__text {
+            position: absolute;
+            font-size: 12px;
+            color: #fff;
+            left: 0;
+            right: 0;
+            top: 310px;
+            margin: auto;
+            width: 85px;
+            text-align: center;
+        }
+    }
+    &__rightSide {
+        position: absolute;
+        left: 698px;
+        top: 209px;
+        color: #fff839;
+        width: 390px;
+        z-index: 2;
+
+        &__img {
+            width: 169px;
+            height: 264px;
+            padding-top: 22px;
+
+            & svg {
+                width: inherit;
+                height: inherit;
+                fill: #fff;
+            }
+        }
+        &__option {
+            position: absolute;
+            font-size: 17px;
+            left: 65px;
+            padding-left: 139px;
+            width: 309px;
+
+            &--top {
+                top: 19px;
+            }
+            &--center {
+                top: 112px;
+            }
+            &--bottom {
+                top: 226px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 112px;
+                background: #fff839;
+                top: 27px;
+                left: 18px;
+            }
+            & span {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background: rgba(255,248,57,0.3);
+                position: absolute;
+                top: 12px;
+                left: 0;
+
+                &:before {
+                    content: '';
+                    position: relative;
+                    background: #fff839;
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    display: block;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &--adult {
+        & .rino10Top__leftSide__btn{
+            & .downloadBtn__text {
+                color: #17a64d;
+            }
+            svg {
+                stroke: #17a64d;
+            }
+        }
+        & .rino10Top__drug__text {
+            width: 140px;
+        }
+
+    }
+}
+
+.rino10Title {
+    font-family: $GPB;
+    font-size: 25px;
+    text-align: center;
+    color: #16479f;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+
+    & span {
+        position: relative;
+        font-size: 15px;
+        top: -8px;
+    }
+    &--adult {
+        color: #17a64d;
+    }
+}
+
+.rino10Goods {
+    padding: 31px 0 45px;
+    background: #fff;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave-shadow.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        top: -39px;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        bottom: -35px;
+        transform: rotate(180deg);
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__items {
+        width: 800px;
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 200px;
+        padding: 0 5px;;
+        &__img {
+            margin-bottom: 14px;
+
+            & img {
+                width: 122px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            color: #646464;
+            text-align: center;
+
+            & span {
+                font-style: italic;
+                display: block;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.rino10Options {
+    padding: 60px 0 50px;
+    background: #f5f5f5;
+
+    &__title {
+        margin-bottom: 58px;
+    }
+    &__items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc((100% - 60px)/3);
+
+        &__img {
+            margin-bottom: 16px;
+            & img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__title {
+            font-family: $GPB;
+            text-transform: uppercase;
+            color: #16479f;
+            font-size: 14px;
+            letter-spacing: -0.6px;
+        }
+        &__text {
+            font-size: 14px;
+            color: #646464;
+            line-height: 1.2;
+
+            & span {
+                font-style: italic;
+                display: block;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+            & div {
+                text-indent: 23px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: #1f4296;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+    }
+    &--adult {
+        & .rino10Options__item__title {
+            color: #17a64d;
+        }
+    }
+}
+
+.rino10Using {
+    padding: 56px 0 80px;
+    background: #fff;
+
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__items {
+        position: relative;
+
+        &__wrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        width: calc((100% - 150px)/6);
+
+        &__img {
+            margin-bottom: 25px;
+
+            & img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            color: #646464;
+            text-align: center;
+        }
+    }
+    &__freeItem {
+        font-size: 9px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 360px;
+    }
+    &--adult {
+        & .rino10Title {
+            color: #17a64d;
+        }
+    }
+}

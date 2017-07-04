@@ -1,0 +1,70 @@
+.footer {
+    background: #ebebeb;
+    position: relative;
+    padding: 46px 0 59px;
+    z-index: 10;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -38px;
+        height: 38px;
+        width: 100%;
+        background: url(../img/footer-wave.png) repeat-x;
+    }
+    &__topLine {
+        padding: 0 100px;
+        margin-bottom: 32px;
+
+        &__smallLogo {
+            float: right;
+            padding-top: 6px;
+        }
+    }
+    &__logo {
+        width: 170px;
+        float: left;
+        margin-right: 177px;
+    }
+    &__nav {
+        float: left;
+        width: 288px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6px;
+
+        &__itemWrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            color: #646464;
+            font-family: $GP;
+            text-transform: uppercase;
+            line-height: 1.1;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.3s;
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: -0.2px;
+
+            &:hover {
+                border-color: #00bcb4;
+            }
+        }
+    }
+    &__botLine {
+        padding: 0 100px;
+
+        &__info {
+            font-size: 10px;
+            line-height: 1.4;
+        }
+    }
+}

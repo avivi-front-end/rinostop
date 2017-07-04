@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Gotham Pro Bold';
+	src: url('fonts/GothamPro-Bold/GothamPro-Bold.eot');
+	src: url('fonts/GothamPro-Bold/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Bold/GothamPro-Bold.woff') format('woff'),
+		url('fonts/GothamPro-Bold/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Black';
+	src: url('fonts/GothamPro-Black/GothamPro-Black.eot');
+	src: url('fonts/GothamPro-Black/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Black/GothamPro-Black.woff') format('woff'),
+		url('fonts/GothamPro-Black/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('fonts/GothamPro-Regular/GothamPro-Regular.eot');
+	src: url('fonts/GothamPro-Regular/GothamPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Regular/GothamPro-Regular.woff') format('woff'),
+		url('fonts/GothamPro-Regular/GothamPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Medium';
+	src: url('fonts/GothamPro-Medium/GothamPro-Medium.eot');
+	src: url('fonts/GothamPro-Medium/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Medium/GothamPro-Medium.woff') format('woff'),
+		url('fonts/GothamPro-Medium/GothamPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Light';
+	src: url('fonts/GothamPro-Light/GothamPro-Light.eot');
+	src: url('fonts/GothamPro-Light/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Light/GothamPro-LightLight.woff') format('woff'),
+		url('fonts/GothamPro-Light/GothamPro-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+$GP: 'Gotham Pro', sans-serif;
+$GPB: 'Gotham Pro Bold', sans-serif;
+$GPM: 'Gotham Pro Medium', sans-serif;
+$GPL: 'Gotham Pro Light', sans-serif;
+$GPBlack: 'Gotham Pro Black', sans-serif;

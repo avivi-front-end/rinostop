@@ -1,0 +1,177 @@
+body {
+    font-family: $GP;
+    color: #646464;
+}
+.page-body {
+    // padding-top: 97px;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+}
+
+.topSectionBg {
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: 0;
+    background-size: cover !important;
+    background-position: center !important;
+    // z-index: -1;
+
+    &--index {
+        background: url(../img/topSection-index.jpg);
+    }
+    &--indexSprey {
+        background: url(../img/topSection-indexSprey.jpg);
+    }
+    &--norm {
+        background: url(../img/topSection-norm.jpg);
+    }
+    &--rino10Sprey {
+        background: url(../img/topSection-rino10Sprey.jpg);
+    }
+    &--rino10Sprey-v {
+        background: url(../img/topSection-rino10Sprey-v.jpg);
+    }
+    &--babe {
+        background: url(../img/topSection-babe.jpg);
+    }
+    &--zabolevanie {
+        background: url(../img/topSection-zabolevanie.jpg);
+    }
+    &--all {
+        background: url(../img/topSection-all.jpg);
+    }
+    &--sosudu {
+        background: url(../img/topSection-sosudu.jpg);
+    }
+    &--soft {
+        background: url(../img/topSection-soft.jpg);
+    }
+    &--forte {
+        background: url(../img/topSection-forte.jpg);
+    }
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: -22px;
+    width: 100%;
+
+    &__pages {
+        float: left;
+    }
+    &__link {
+        color: #fff;
+        position: relative;
+        font-size: 14px;
+        margin-right: 5px;
+        letter-spacing: -0.2px;
+
+        &:not(:first-child) {
+            padding-left: 10px;
+
+            &:before {
+                content: '/';
+                position: absolute;
+                color: #fff;
+                font-size: 15px;
+                left: -1px;
+                top: -1px;
+            }
+        }
+        &:first-child {
+            font-family: $GPB;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+    }
+    &__social {
+        float: right;
+        margin-right: 117px;
+    }
+    &__socItem {
+        position: relative;
+        margin-left: 24px;
+        width: 20px;
+        display: inline-block;
+
+        &--word {
+            color: #fff;
+            font-size: 14px;
+            width: 60px;
+            display: inline-block;
+            height: 26px;
+            margin-right: 25px;
+            position: relative;
+            top: 5px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        &--fb:before {
+            @include sprite($fb);
+        }
+        &--ok:before {
+            @include sprite($ok);
+        }
+        &--vk:before {
+            @include sprite($vk);
+        }
+    }
+}
+
+.downloadBtn {
+    position: absolute;
+    width: 171px;
+    height: 56px;
+    font-family: $GP;
+    border: none;
+
+    &__text {
+        color: #fff;
+        position: absolute;
+        text-align: left;
+        top: 13px;
+        left: 72px;
+    }
+    &__icon {
+        width: 46px;
+        height: 35px;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        margin: auto;
+        left: 15px;
+
+        & svg {
+            width: inherit;
+            height: inherit;
+            stroke: #fff;
+        }
+    }
+}
+
+.greenTitle {
+    font-size: 25px;
+    text-align: center;
+    color: #17a64d;
+    font-family: $GPB;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+}

@@ -1,0 +1,184 @@
+.zabolevanieTop {
+    padding-top: 136px;
+
+    &__text {
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $GPB;
+        font-size: 37px;
+        text-align: center;
+        padding-top: 161px;
+        padding-bottom: 390px;
+    }
+}
+
+.zabolevanieCauses {
+    background: #fff;
+    padding: 40px 0 52px;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave-shadow.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        top: -39px;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        bottom: -35px;
+        transform: rotate(180deg);
+    }
+    &__title {
+        text-transform: uppercase;
+        color: #60807d;
+        font: 25px $GPB;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    &__items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: calc(50% - 15px);
+        padding-right: 60px;
+
+        &__title {
+            font-size: 14px;
+            color: #60807d;
+            font-family: $GPB;
+            text-transform: uppercase;
+        }
+        &__smallTitle {
+            font-size: 14px;
+            color: #646464;
+            font-family: $GPB;
+            margin-top: 15px;
+        }
+        &__text {
+            color: #646464;
+            font-size: 14px;
+        }
+    }
+}
+
+.zabolevanieDiagn {
+    background: #f5f5f5;
+    padding-top: 93px;
+    padding-bottom: 67px;
+
+    &__title {
+        text-transform: uppercase;
+        color: #60807d;
+        font: 25px $GPB;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    &__leftItem {
+        width: 185px;
+        float: left;
+        font: 18px $GPB;
+        padding-right: 5px;
+        line-height: 1.3;
+        padding-top: 5px;
+    }
+    &__items {
+        width: calc(100% - 300px);
+        float: left;
+        margin-left: 20px;
+
+        &__wrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 40px;
+            margin-bottom: 45px;
+        }
+    }
+    &__item {
+        width: 190px;
+
+        &:nth-child(-n+4) {
+            margin-bottom: 76px;
+        }
+        &__img {
+            margin-bottom: 10px;
+
+            & img {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    &__bigText {
+        font-size: 14px;
+    }
+}
+
+.zabolevanieFight {
+    padding-top: 96px;
+    padding-bottom: 25px;
+
+    &__title {
+        text-transform: uppercase;
+        color: #60807d;
+        font: 25px $GPB;
+        text-align: center;
+    }
+    &__section {
+        padding: 53px 140px 150px 285px;
+        position: relative;
+
+
+        &__img {
+            position: absolute;
+            left: 10px;
+            top: -80px;
+        }
+        &__text {
+            float: left;
+            width: 680px;
+            margin-left: 15px;
+            font-size: 14px;
+
+            & div {
+                color: #60807d;
+                font: 14px $GPB;
+                text-transform: uppercase;
+            }
+        }
+        &--side {
+            padding: 40px 0 150px 85px;
+            & .zabolevanieFight__section__img {
+                right: 5px;
+                left: auto;
+                top: -140px;
+            }
+            & .zabolevanieFight__section__text {
+                width: 530px;
+            }
+        }
+        &--last {
+            & .zabolevanieFight__section__img {
+                left: -43px;
+                top: -155px;
+                z-index: -1;
+            }
+        }
+    }
+}

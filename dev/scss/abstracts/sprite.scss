@@ -1,0 +1,409 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$alergy-name: 'alergy';
+$alergy-x: 0px;
+$alergy-y: 888px;
+$alergy-offset-x: 0px;
+$alergy-offset-y: -888px;
+$alergy-width: 814px;
+$alergy-height: 167px;
+$alergy-total-width: 1469px;
+$alergy-total-height: 1246px;
+$alergy-image: 'sprite.png';
+$alergy: (0px, 888px, 0px, -888px, 814px, 167px, 1469px, 1246px, 'sprite.png', 'alergy', );
+$calendar-name: 'calendar';
+$calendar-x: 330px;
+$calendar-y: 1055px;
+$calendar-offset-x: -330px;
+$calendar-offset-y: -1055px;
+$calendar-width: 144px;
+$calendar-height: 181px;
+$calendar-total-width: 1469px;
+$calendar-total-height: 1246px;
+$calendar-image: 'sprite.png';
+$calendar: (330px, 1055px, -330px, -1055px, 144px, 181px, 1469px, 1246px, 'sprite.png', 'calendar', );
+$checked-name: 'checked';
+$checked-x: 1453px;
+$checked-y: 234px;
+$checked-offset-x: -1453px;
+$checked-offset-y: -234px;
+$checked-width: 15px;
+$checked-height: 10px;
+$checked-total-width: 1469px;
+$checked-total-height: 1246px;
+$checked-image: 'sprite.png';
+$checked: (1453px, 234px, -1453px, -234px, 15px, 10px, 1469px, 1246px, 'sprite.png', 'checked', );
+$dill-name: 'dill';
+$dill-x: 1336px;
+$dill-y: 849px;
+$dill-offset-x: -1336px;
+$dill-offset-y: -849px;
+$dill-width: 101px;
+$dill-height: 181px;
+$dill-total-width: 1469px;
+$dill-total-height: 1246px;
+$dill-image: 'sprite.png';
+$dill: (1336px, 849px, -1336px, -849px, 101px, 181px, 1469px, 1246px, 'sprite.png', 'dill', );
+$drib-name: 'drib';
+$drib-x: 1454px;
+$drib-y: 211px;
+$drib-offset-x: -1454px;
+$drib-offset-y: -211px;
+$drib-width: 11px;
+$drib-height: 17px;
+$drib-total-width: 1469px;
+$drib-total-height: 1246px;
+$drib-image: 'sprite.png';
+$drib: (1454px, 211px, -1454px, -211px, 11px, 17px, 1469px, 1246px, 'sprite.png', 'drib', );
+$fb-name: 'fb';
+$fb-x: 1440px;
+$fb-y: 234px;
+$fb-offset-x: -1440px;
+$fb-offset-y: -234px;
+$fb-width: 13px;
+$fb-height: 24px;
+$fb-total-width: 1469px;
+$fb-total-height: 1246px;
+$fb-image: 'sprite.png';
+$fb: (1440px, 234px, -1440px, -234px, 13px, 24px, 1469px, 1246px, 'sprite.png', 'fb', );
+$forte-banka-wrap-name: 'forte-banka-wrap';
+$forte-banka-wrap-x: 464px;
+$forte-banka-wrap-y: 521px;
+$forte-banka-wrap-offset-x: -464px;
+$forte-banka-wrap-offset-y: -521px;
+$forte-banka-wrap-width: 451px;
+$forte-banka-wrap-height: 298px;
+$forte-banka-wrap-total-width: 1469px;
+$forte-banka-wrap-total-height: 1246px;
+$forte-banka-wrap-image: 'sprite.png';
+$forte-banka-wrap: (464px, 521px, -464px, -521px, 451px, 298px, 1469px, 1246px, 'sprite.png', 'forte-banka-wrap', );
+$leather-name: 'leather';
+$leather-x: 1336px;
+$leather-y: 1030px;
+$leather-offset-x: -1336px;
+$leather-offset-y: -1030px;
+$leather-width: 128px;
+$leather-height: 128px;
+$leather-total-width: 1469px;
+$leather-total-height: 1246px;
+$leather-image: 'sprite.png';
+$leather: (1336px, 1030px, -1336px, -1030px, 128px, 128px, 1469px, 1246px, 'sprite.png', 'leather', );
+$mask-name: 'mask';
+$mask-x: 474px;
+$mask-y: 1055px;
+$mask-offset-x: -474px;
+$mask-offset-y: -1055px;
+$mask-width: 159px;
+$mask-height: 126px;
+$mask-total-width: 1469px;
+$mask-total-height: 1246px;
+$mask-image: 'sprite.png';
+$mask: (474px, 1055px, -474px, -1055px, 159px, 126px, 1469px, 1246px, 'sprite.png', 'mask', );
+$menu-blue-bg-name: 'menu-blue-bg';
+$menu-blue-bg-x: 464px;
+$menu-blue-bg-y: 819px;
+$menu-blue-bg-offset-x: -464px;
+$menu-blue-bg-offset-y: -819px;
+$menu-blue-bg-width: 400px;
+$menu-blue-bg-height: 59px;
+$menu-blue-bg-total-width: 1469px;
+$menu-blue-bg-total-height: 1246px;
+$menu-blue-bg-image: 'sprite.png';
+$menu-blue-bg: (464px, 819px, -464px, -819px, 400px, 59px, 1469px, 1246px, 'sprite.png', 'menu-blue-bg', );
+$menu-green-bg-name: 'menu-green-bg';
+$menu-green-bg-x: 633px;
+$menu-green-bg-y: 1055px;
+$menu-green-bg-offset-x: -633px;
+$menu-green-bg-offset-y: -1055px;
+$menu-green-bg-width: 271px;
+$menu-green-bg-height: 48px;
+$menu-green-bg-total-width: 1469px;
+$menu-green-bg-total-height: 1246px;
+$menu-green-bg-image: 'sprite.png';
+$menu-green-bg: (633px, 1055px, -633px, -1055px, 271px, 48px, 1469px, 1246px, 'sprite.png', 'menu-green-bg', );
+$microbe-name: 'microbe';
+$microbe-x: 1066px;
+$microbe-y: 740px;
+$microbe-offset-x: -1066px;
+$microbe-offset-y: -740px;
+$microbe-width: 152px;
+$microbe-height: 226px;
+$microbe-total-width: 1469px;
+$microbe-total-height: 1246px;
+$microbe-image: 'sprite.png';
+$microbe: (1066px, 740px, -1066px, -740px, 152px, 226px, 1469px, 1246px, 'sprite.png', 'microbe', );
+$minus-name: 'minus';
+$minus-x: 1440px;
+$minus-y: 258px;
+$minus-offset-x: -1440px;
+$minus-offset-y: -258px;
+$minus-width: 19px;
+$minus-height: 1px;
+$minus-total-width: 1469px;
+$minus-total-height: 1246px;
+$minus-image: 'sprite.png';
+$minus: (1440px, 258px, -1440px, -258px, 19px, 1px, 1469px, 1246px, 'sprite.png', 'minus', );
+$ok-name: 'ok';
+$ok-x: 1440px;
+$ok-y: 211px;
+$ok-offset-x: -1440px;
+$ok-offset-y: -211px;
+$ok-width: 14px;
+$ok-height: 23px;
+$ok-total-width: 1469px;
+$ok-total-height: 1246px;
+$ok-image: 'sprite.png';
+$ok: (1440px, 211px, -1440px, -211px, 14px, 23px, 1469px, 1246px, 'sprite.png', 'ok', );
+$qhead-name: 'qhead';
+$qhead-x: 915px;
+$qhead-y: 521px;
+$qhead-offset-x: -915px;
+$qhead-offset-y: -521px;
+$qhead-width: 145px;
+$qhead-height: 187px;
+$qhead-total-width: 1469px;
+$qhead-total-height: 1246px;
+$qhead-image: 'sprite.png';
+$qhead: (915px, 521px, -915px, -521px, 145px, 187px, 1469px, 1246px, 'sprite.png', 'qhead', );
+$real-drib-name: 'real-drib';
+$real-drib-x: 1218px;
+$real-drib-y: 740px;
+$real-drib-offset-x: -1218px;
+$real-drib-offset-y: -740px;
+$real-drib-width: 85px;
+$real-drib-height: 153px;
+$real-drib-total-width: 1469px;
+$real-drib-total-height: 1246px;
+$real-drib-image: 'sprite.png';
+$real-drib: (1218px, 740px, -1218px, -740px, 85px, 153px, 1469px, 1246px, 'sprite.png', 'real-drib', );
+$rino-blue-bg-name: 'rino-blue-bg';
+$rino-blue-bg-x: 614px;
+$rino-blue-bg-y: 0px;
+$rino-blue-bg-offset-x: -614px;
+$rino-blue-bg-offset-y: 0px;
+$rino-blue-bg-width: 452px;
+$rino-blue-bg-height: 379px;
+$rino-blue-bg-total-width: 1469px;
+$rino-blue-bg-total-height: 1246px;
+$rino-blue-bg-image: 'sprite.png';
+$rino-blue-bg: (614px, 0px, -614px, 0px, 452px, 379px, 1469px, 1246px, 'sprite.png', 'rino-blue-bg', );
+$rino-red-bg-name: 'rino-red-bg';
+$rino-red-bg-x: 0px;
+$rino-red-bg-y: 521px;
+$rino-red-bg-offset-x: 0px;
+$rino-red-bg-offset-y: -521px;
+$rino-red-bg-width: 464px;
+$rino-red-bg-height: 367px;
+$rino-red-bg-total-width: 1469px;
+$rino-red-bg-total-height: 1246px;
+$rino-red-bg-image: 'sprite.png';
+$rino-red-bg: (0px, 521px, 0px, -521px, 464px, 367px, 1469px, 1246px, 'sprite.png', 'rino-red-bg', );
+$shiled-name: 'shiled';
+$shiled-x: 1336px;
+$shiled-y: 687px;
+$shiled-offset-x: -1336px;
+$shiled-offset-y: -687px;
+$shiled-width: 114px;
+$shiled-height: 162px;
+$shiled-total-width: 1469px;
+$shiled-total-height: 1246px;
+$shiled-image: 'sprite.png';
+$shiled: (1336px, 687px, -1336px, -687px, 114px, 162px, 1469px, 1246px, 'sprite.png', 'shiled', );
+$ship-name: 'ship';
+$ship-x: 1066px;
+$ship-y: 311px;
+$ship-offset-x: -1066px;
+$ship-offset-y: -311px;
+$ship-width: 216px;
+$ship-height: 223px;
+$ship-total-width: 1469px;
+$ship-total-height: 1246px;
+$ship-image: 'sprite.png';
+$ship: (1066px, 311px, -1066px, -311px, 216px, 223px, 1469px, 1246px, 'sprite.png', 'ship', );
+$skin-name: 'skin';
+$skin-x: 0px;
+$skin-y: 1055px;
+$skin-offset-x: 0px;
+$skin-offset-y: -1055px;
+$skin-width: 330px;
+$skin-height: 191px;
+$skin-total-width: 1469px;
+$skin-total-height: 1246px;
+$skin-image: 'sprite.png';
+$skin: (0px, 1055px, 0px, -1055px, 330px, 191px, 1469px, 1246px, 'sprite.png', 'skin', );
+$slider-microbe-name: 'slider-microbe';
+$slider-microbe-x: 614px;
+$slider-microbe-y: 379px;
+$slider-microbe-offset-x: -614px;
+$slider-microbe-offset-y: -379px;
+$slider-microbe-width: 381px;
+$slider-microbe-height: 125px;
+$slider-microbe-total-width: 1469px;
+$slider-microbe-total-height: 1246px;
+$slider-microbe-image: 'sprite.png';
+$slider-microbe: (614px, 379px, -614px, -379px, 381px, 125px, 1469px, 1246px, 'sprite.png', 'slider-microbe', );
+$soft-banka-wrap-name: 'soft-banka-wrap';
+$soft-banka-wrap-x: 0px;
+$soft-banka-wrap-y: 0px;
+$soft-banka-wrap-offset-x: 0px;
+$soft-banka-wrap-offset-y: 0px;
+$soft-banka-wrap-width: 614px;
+$soft-banka-wrap-height: 521px;
+$soft-banka-wrap-total-width: 1469px;
+$soft-banka-wrap-total-height: 1246px;
+$soft-banka-wrap-image: 'sprite.png';
+$soft-banka-wrap: (0px, 0px, 0px, 0px, 614px, 521px, 1469px, 1246px, 'sprite.png', 'soft-banka-wrap', );
+$sprey-big-name: 'sprey-big';
+$sprey-big-x: 1336px;
+$sprey-big-y: 421px;
+$sprey-big-offset-x: -1336px;
+$sprey-big-offset-y: -421px;
+$sprey-big-width: 74px;
+$sprey-big-height: 266px;
+$sprey-big-total-width: 1469px;
+$sprey-big-total-height: 1246px;
+$sprey-big-image: 'sprite.png';
+$sprey-big: (1336px, 421px, -1336px, -421px, 74px, 266px, 1469px, 1246px, 'sprite.png', 'sprey-big', );
+$sprey-name: 'sprey';
+$sprey-x: 1066px;
+$sprey-y: 0px;
+$sprey-offset-x: -1066px;
+$sprey-offset-y: 0px;
+$sprey-width: 270px;
+$sprey-height: 311px;
+$sprey-total-width: 1469px;
+$sprey-total-height: 1246px;
+$sprey-image: 'sprite.png';
+$sprey: (1066px, 0px, -1066px, 0px, 270px, 311px, 1469px, 1246px, 'sprite.png', 'sprey', );
+$sprey1-name: 'sprey1';
+$sprey1-x: 1066px;
+$sprey1-y: 534px;
+$sprey1-offset-x: -1066px;
+$sprey1-offset-y: -534px;
+$sprey1-width: 214px;
+$sprey1-height: 206px;
+$sprey1-total-width: 1469px;
+$sprey1-total-height: 1246px;
+$sprey1-image: 'sprite.png';
+$sprey1: (1066px, 534px, -1066px, -534px, 214px, 206px, 1469px, 1246px, 'sprite.png', 'sprey1', );
+$sprey2-name: 'sprey2';
+$sprey2-x: 1336px;
+$sprey2-y: 0px;
+$sprey2-offset-x: -1336px;
+$sprey2-offset-y: 0px;
+$sprey2-width: 133px;
+$sprey2-height: 196px;
+$sprey2-total-width: 1469px;
+$sprey2-total-height: 1246px;
+$sprey2-image: 'sprite.png';
+$sprey2: (1336px, 0px, -1336px, 0px, 133px, 196px, 1469px, 1246px, 'sprite.png', 'sprey2', );
+$toothbrush-name: 'toothbrush';
+$toothbrush-x: 1336px;
+$toothbrush-y: 196px;
+$toothbrush-offset-x: -1336px;
+$toothbrush-offset-y: -196px;
+$toothbrush-width: 104px;
+$toothbrush-height: 225px;
+$toothbrush-total-width: 1469px;
+$toothbrush-total-height: 1246px;
+$toothbrush-image: 'sprite.png';
+$toothbrush: (1336px, 196px, -1336px, -196px, 104px, 225px, 1469px, 1246px, 'sprite.png', 'toothbrush', );
+$vk-name: 'vk';
+$vk-x: 1440px;
+$vk-y: 196px;
+$vk-offset-x: -1440px;
+$vk-offset-y: -196px;
+$vk-width: 26px;
+$vk-height: 15px;
+$vk-total-width: 1469px;
+$vk-total-height: 1246px;
+$vk-image: 'sprite.png';
+$vk: (1440px, 196px, -1440px, -196px, 26px, 15px, 1469px, 1246px, 'sprite.png', 'vk', );
+$water-wave-name: 'water-wave';
+$water-wave-x: 814px;
+$water-wave-y: 888px;
+$water-wave-offset-x: -814px;
+$water-wave-offset-y: -888px;
+$water-wave-width: 189px;
+$water-wave-height: 156px;
+$water-wave-total-width: 1469px;
+$water-wave-total-height: 1246px;
+$water-wave-image: 'sprite.png';
+$water-wave: (814px, 888px, -814px, -888px, 189px, 156px, 1469px, 1246px, 'sprite.png', 'water-wave', );
+$spritesheet-width: 1469px;
+$spritesheet-height: 1246px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($alergy, $calendar, $checked, $dill, $drib, $fb, $forte-banka-wrap, $leather, $mask, $menu-blue-bg, $menu-green-bg, $microbe, $minus, $ok, $qhead, $real-drib, $rino-blue-bg, $rino-red-bg, $shiled, $ship, $skin, $slider-microbe, $soft-banka-wrap, $sprey-big, $sprey, $sprey1, $sprey2, $toothbrush, $vk, $water-wave, );
+$spritesheet: (1469px, 1246px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/pngsprite/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
