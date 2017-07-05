@@ -65,6 +65,10 @@
         &__info {
             font-size: 10px;
             line-height: 1.4;
+
+            & a {
+                color: inherit;
+            }
         }
     }
 }

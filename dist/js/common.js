@@ -98,16 +98,16 @@ $(document).ready(function() {
 
     var lostMause = function(target) {
         target.removeClass("active");
-        setTimeout(function() {
+        // setTimeout(function() {
             if(!drugsBtn.hasClass("active") && !drugsMenu.hasClass("active")) {
                 drugsMenu.css("display", "none");
             }
-        }, 200);
-        setTimeout(function() {
+        // }, 200);
+        // setTimeout(function() {
             if(!articlesBtn.hasClass("active") && !articlesMenu.hasClass("active")) {
                 articlesMenu.css("display", "none");
             }
-        }, 200);
+        // }, 200);
     };
 
     $('.js-dignitySlider').slick({

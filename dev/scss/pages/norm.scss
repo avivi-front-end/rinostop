@@ -110,7 +110,7 @@
                 align-items: center;
             }
             &--bottom {
-                top: 233px;
+                top: 215px;
             }
         }
         &__textSign {
@@ -189,6 +189,10 @@
         color: #fff;
         left: -80px;
         top: 119px;
+
+        &--soft {
+            top: 185px;
+        }
     }
     &__downloadBtn {
         position: relative;
@@ -494,7 +498,7 @@
                     &:before {
                         content: '';
                         position: absolute;
-                        @include sprite($shiled);
+                        @include sprite($shield-green);
                         top: -52px;
                         right: -10px;
                         left: auto;
@@ -813,7 +817,7 @@
                     border-color: #f598b3;
                 }
                 & .slick-active button {
-                    background: #987dc2 !important;
+                    background: #f598b3 !important;
                 }
             }
         }
@@ -1027,6 +1031,12 @@
             left: 55px;
             bottom: 0;
         }
+        &--alergy:before {
+            @include sprite($alergy);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
         & img {
             position: relative;
             top: -80px;
@@ -1089,7 +1099,7 @@
         top: -6px;
     }
     &__itemFor {
-        width: 190px;
+        width: 171px;
         position: absolute;
         left: 4px;
         top: 105px;
@@ -1124,19 +1134,20 @@
         text-align: right;
         width: 195px;
         opacity: 0.4;
-        top: -25px;
+        top: -15px;
+        font-size: 14px;
 
         &:before {
             content: '';
             display: block;
-            border: 43px solid transparent;
-            border-right: 65px solid #fff;
+            border: 25px solid transparent;
+            border-right: 42px solid #fff;
             position: absolute;
-            right: -120px;
-            top: 10px;
+            right: -96px;
+            top: 25px;
         }
         & span {
-            font-size: 25px;
+            font-size: 18px;
             font-family: $GPB;
             display: block;
             margin-bottom: 5px;
@@ -1233,7 +1244,7 @@
         & span {
             display: block;
             color: #646464;
-            font-size: 12px;
+            font-size: 18px;
         }
     }
     &__center {
@@ -1258,7 +1269,7 @@
         & span {
             display: block;
             color: #646464;
-            font-size: 12px;
+            font-size: 18px;
             margin-bottom: 15px;
         }
 

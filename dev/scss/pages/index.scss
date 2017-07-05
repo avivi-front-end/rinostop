@@ -60,7 +60,7 @@
         position: relative;
         width: 431px;
         margin: 0 auto;
-        padding: 54px 30px 67px;
+        padding: 54px 30px 45px;
         line-height: 1.1;
 
         &__textWrap {
@@ -73,7 +73,7 @@
             width: 431px;
             height: 192px;
             overflow: hidden;
-            z-index: -1;
+            // z-index: -1;
         }
         &__text {
             letter-spacing: -0.8px;
@@ -172,6 +172,7 @@
 
             .indexPage__info__textWrap {
                 width: 100%;
+                z-index: -1;
             }
         }
         &__item {

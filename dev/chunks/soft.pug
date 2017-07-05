@@ -4,7 +4,7 @@
             .breadcrumbs__pages
                 a(href="#").breadcrumbs__link Главная
                 a(href="#").breadcrumbs__link Главная риностоп аква
-                a(href="#").breadcrumbs__link Риностоп аква НОРМ
+                a(href="#").breadcrumbs__link Риностоп аква Софт
             .breadcrumbs__social
                 a(href="#").breadcrumbs__socItem.breadcrumbs__socItem--word Поделиться
                 a(href="#").breadcrumbs__socItem.breadcrumbs__socItem--fb
@@ -16,7 +16,7 @@
                 span.normTop__rino__img
                     img(src="./img/other-svg/rino-blue.svg")
             .normTop__drug.normTop__drug--wrapSoft
-                span.normTop__drugOther 125 мл
+                span.normTop__drugOther.normTop__drugOther--soft 125 мл
                 .normTop__drug__btnWrap.normTop__drug__btnWrap--pos
                     button(type="button").normTop__downloadBtn.downloadBtn
                         span.downloadBtn__text скачать инструкцию
@@ -169,16 +169,18 @@
         .softSlider__namesWrap
             .softSlider__names.js-namesSlider
                 .softSlider__namesItem ежедневная гигиена
-                .softSlider__namesItem при аллергическом насморке: 
-                .softSlider__namesItem при повышенной сухости слизистой
                 .softSlider__namesItem подготовка слизистой носа к применению лекарственных средств:
+                .softSlider__namesItem при аллергическом насморке: 
+                .softSlider__namesItem профилактика острых респираторных заболеваний, в т.ч. гриппа и ОРВИ:
+                .softSlider__namesItem при повышенной сухости слизистой
                 .softSlider__namesItem ежедневная гигиена
-                .softSlider__namesItem при аллергическом насморке: 
-                .softSlider__namesItem при повышенной сухости слизистой
                 .softSlider__namesItem подготовка слизистой носа к применению лекарственных средств:
+                .softSlider__namesItem при аллергическом насморке: 
+                .softSlider__namesItem профилактика острых респираторных заболеваний, в т.ч. гриппа и ОРВИ:
+                .softSlider__namesItem при повышенной сухости слизистой
         .softSlider__main.js-noseSlider
             .softSlider__mainItem
-                .softSlider__mainImg.softSlider__mainImg--skin
+                .softSlider__mainImg.softSlider__mainImg--sprey
                     img(src="./img/nose.png")
                 .softSlider__mainText
                     span поддержание нормального физиологического состояния слизистой оболочки носа и носоглотки
@@ -186,14 +188,14 @@
                     span увлажнение слизистой
                     span увлажнение слизистой
             .softSlider__mainItem
-                .softSlider__mainImg.softSlider__mainImg--sprey
-                    img(src="./img/nose.png")
+                .softSlider__mainImg.softSlider__mainImg--sprey2
+                        img(src="./img/nose.png")
                 .softSlider__mainText
                     span повышение эффективности лекарственных средств, наносимых на слизистую оболочку полости носа
                     span уменьшение потребления местных лекарственных средств
                     span снижение риска развития побочных эффектов локальных лекарственных средств
             .softSlider__mainItem
-                .softSlider__mainImg.softSlider__mainImg--sprey2
+                .softSlider__mainImg.softSlider__mainImg--alergy
                     img(src="./img/nose.png")
                 .softSlider__mainText
                     span механическое смывание аллергенов со слизистой полости носа
@@ -220,11 +222,19 @@
                 .softSlider__mainImg.softSlider__mainImg--sprey
                     img(src="./img/nose.png")
                 .softSlider__mainText
+                    span поддержание нормального физиологического состояния слизистой оболочки носа и носоглотки
+                    span очищение от слизи и частиц пыли 
+                    span увлажнение слизистой
+                    span увлажнение слизистой
+            .softSlider__mainItem
+                .softSlider__mainImg.softSlider__mainImg--sprey2
+                        img(src="./img/nose.png")
+                .softSlider__mainText
                     span повышение эффективности лекарственных средств, наносимых на слизистую оболочку полости носа
                     span уменьшение потребления местных лекарственных средств
                     span снижение риска развития побочных эффектов локальных лекарственных средств
             .softSlider__mainItem
-                .softSlider__mainImg.softSlider__mainImg--sprey2
+                .softSlider__mainImg.softSlider__mainImg--alergy
                     img(src="./img/nose.png")
                 .softSlider__mainText
                     span механическое смывание аллергенов со слизистой полости носа
@@ -239,6 +249,16 @@
                     span повышение местного иммунитета
                     span стимуляция защитной функции эпителия
                     span активное освобождение всех отделов полости носа от респираторных вирусов и бактерий
+            .softSlider__mainItem
+                .softSlider__mainImg.softSlider__mainImg--skin
+                    img(src="./img/nose.png")
+                .softSlider__mainText
+                    span поддержание нормального физиологического состояния слизистой оболочки носа и носоглотки
+                    span очищение от слизи и частиц пыли 
+                    span увлажнение слизистой
+                    span увлажнение слизистой
+            
+            
 
 .spreyUsing.spreyUsing--babe
     .container
@@ -249,11 +269,6 @@
                 | аква софт:  
             .spreyUsing__itemFor.spreyUsing__itemFor--forte
                 span.spreyUsing__itemForText ДЕТЯМ СТАРШЕ 2-х ЛЕТ И ВЗРОСЛЫМ
-                .normTop__drug__btnWrap 
-                    button(type="button").normTop__downloadBtn.downloadBtn
-                        span.downloadBtn__text скачать инструкцию
-                        span.downloadBtn__icon
-                            +icon('download')
             .spreyUsing__itemChild
                 span ДЕТЯМ<br />ДО 2-х ЛЕТ
                 |орошение производить в положении ребенка лежа на боку
@@ -301,7 +316,7 @@
         img(src="./img/clock.png")
     .container
         .spreySchedule__title
-            |КАК ИСПОЛЬЗОВАТЬ 
+            |КРАТНОСТЬ ПРИМЕНЕНИЯ
             span.domainSection__title__black СПРЕЙ РИНОСТОП
                 span.spreySchedule__titleItem ®
                 | аква софт:  
