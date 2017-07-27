@@ -1,10 +1,17 @@
 body {
     font-family: $GP;
     color: #646464;
+    padding-bottom: 71px;
+
+    @media (max-width: $screen-md-max) {
+        padding-bottom: 90px;
+    }
+    @media (max-width: $screen-xs-max) {
+        padding-bottom: 130px;
+    }
+
 }
-.page-body {
-    // padding-top: 97px;
-}
+
 a {
     text-decoration: none;
 }
@@ -17,18 +24,67 @@ button {
     position: relative;
 }
 
-.topSectionBg {
-    // position: absolute;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    // bottom: 0;
-    background-size: cover !important;
-    background-position: center !important;
-    // z-index: -1;
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 99;
 
+    &:before {
+        content: '';
+        @include sprite($eye);
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        @media (max-width: $screen-sm-max) {
+            right: 10px;
+        }
+    }
+}
+
+.bannerWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: $A4F;
+    font-size: 48px;
+    color: #999999;
+    height: 71px;
+
+    @media (max-width: $screen-lg-max) {
+        font-size: 40px;
+    }
+    @media (max-width: $screen-md-max) {
+        font-size: 36px;
+        max-width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        height: 90px;
+    }
+    @media (max-width: $screen-sm-max) {
+        max-width: 70%;
+        font-size: 32px;
+    }
+    @media (max-width: $screen-xs-max) {
+        font-size: 28px;
+        height: 130px;
+    }
+}
+
+.topSectionBg {
     &--index {
         background: url(../img/topSection-index.jpg);
+
+        @media (max-width: $screen-md-max) {
+            background-position: left !important;
+            background-size: cover;
+        }
     }
     &--indexSprey {
         background: url(../img/topSection-indexSprey.jpg);
@@ -60,13 +116,26 @@ button {
     &--forte {
         background: url(../img/topSection-forte.jpg);
     }
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.xs-hidden {
+    @media (max-width: $screen-xs-max) {
+        display: none;
+    }
 }
 
 .breadcrumbs {
     position: absolute;
     top: -22px;
     width: 100%;
+    left: 0;
+    padding-left: 15px;
 
+    @media (max-width: $screen-sm-max) {
+        top: -30px;
+    }
     &__pages {
         float: left;
     }
@@ -97,6 +166,10 @@ button {
     &__social {
         float: right;
         margin-right: 117px;
+
+        @media (max-width: $screen-md-max) {
+            display: none;
+        }
     }
     &__socItem {
         position: relative;
@@ -174,4 +247,8 @@ button {
     font-family: $GPB;
     text-transform: uppercase;
     letter-spacing: -0.2px;
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 20px;
+    } 
 }

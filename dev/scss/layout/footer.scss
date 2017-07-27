@@ -4,6 +4,13 @@
     padding: 46px 0 59px;
     z-index: 10;
 
+    @media (max-width: $screen-md-max) {
+        padding-bottom: 30px;
+    }
+    @media (max-width: $screen-sm-max) {
+        padding-bottom: 100px;
+
+    }
     &:before {
         content: '';
         position: absolute;
@@ -11,20 +18,50 @@
         height: 38px;
         width: 100%;
         background: url(../img/footer-wave.png) repeat-x;
+
+        @media (max-width: $screen-md-max) {
+            top: -15px;
+            height: 15px;
+            background: url(../img/small-footer-wave.png) repeat-x;
+        }
     }
     &__topLine {
         padding: 0 100px;
         margin-bottom: 32px;
-
+        
+        @media (max-width: $screen-sm-max) {
+            padding: 0;
+            position: relative;
+        }
         &__smallLogo {
             float: right;
             padding-top: 6px;
+
+            @media (max-width: $screen-md-max) {
+                position: relative;
+                top: 45px;
+            }
+            @media (max-width: $screen-sm-max) {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
     }
     &__logo {
         width: 170px;
         float: left;
         margin-right: 177px;
+        
+        @media (max-width: $screen-lg-max) {
+            margin-right: 120px;
+        }
+        @media (max-width: $screen-md-max) {
+            margin-right: 32px;
+        }
+        @media (max-width: $screen-sm-max) {
+            margin-right: 0;
+        }
     }
     &__nav {
         float: left;
@@ -35,12 +72,22 @@
         justify-content: space-between;
         padding-top: 6px;
 
+        @media (max-width: $screen-sm-max) {
+            float: none;
+            width: 100%;
+            flex-wrap: wrap;
+        }
         &__itemWrap {
             display: -webkit-flex;
             display: -ms-flex;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: $screen-sm-max) {
+                width: 100%;
+                justify-content: flex-start;
+                margin-top: 15px;
+            }
         }
         &__item {
             color: #646464;
@@ -62,6 +109,9 @@
     &__botLine {
         padding: 0 100px;
 
+        @media (max-width: $screen-md-max) {
+            padding: 0;
+        }
         &__info {
             font-size: 10px;
             line-height: 1.4;
@@ -69,6 +119,32 @@
             & a {
                 color: inherit;
             }
+        }
+    }
+    &__upBtn {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 70px;
+        background: #18aaa8;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        bottom: 0;
+        border: none;
+
+        @media (max-width: $screen-sm-max) {
+            display: flex;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($up-arrow);
+            left: 0;
+            right: 0;
+            top: 15px;
+            margin: auto;
         }
     }
 }

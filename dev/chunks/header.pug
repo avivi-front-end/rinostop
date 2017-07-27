@@ -1,12 +1,89 @@
 header.wrapper.header#header
-    div.header__wrap
+    .header__wrap
         .container
+            .header__mobWrap
+                a(href="#").header__logoBtn
+                    img(src='./img/bigLogo.png')
+                .header__mobRight
+                    a(href="#").header__menuBtn.js-menuBtn
             nav.header__nav
                 .header__nav__itemBlock.js-drugsBtn
                     a(href="#").header__nav__item препАраты
                     .header__nav__drugsMenu.js-drugsMenu
                         .header__drugsType
                             .header__drugsType__title
+                                |Рино
+                                span стоп
+                            .header__drugsType__catalog
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-green.png")
+                                    span Для взрослых и детей с 6 лет
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-green.png")
+                                    span Для взрослых и детей с 6 лет
+                        .header__drugsType
+                            .header__drugsType__title.header__drugsType__title--blue
+                                |Рино
+                                span стоп
+                                |аква
+                            .header__drugsType__catalog.header__drugsType__catalog--blue
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-blue.png")
+                                    span Для взрослых и детей с 6 лет
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-blue.png")
+                                    span Для взрослых и детей с 6 лет
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-blue.png")
+                                    span Для взрослых и детей с 6 лет
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/drugs-item-blue.png")
+                                    span Для взрослых и детей с 6 лет
+                        .header__drugsType
+                            .header__drugsType__title.header__drugsType__title--purple
+                                |Рино
+                                span стоп
+                                |экстра
+                            .header__drugsType__catalog.header__drugsType__catalog--purple
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-1.png")
+                                    span Для детей с первых дней жизни
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-2.png")
+                                    span Для детей с 1 года и до 6 лет 
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-3.png")
+                                    span Для детей с 6 лет и взрослых 
+                .header__nav__itemBlock.js-articlesBtn
+                    a(href="#").header__nav__item строение<br />и функции носа
+                    .header__articlesMenu.js-articlesMenu
+                        ul.header__articlesMenu__list
+                            li.header__articlesMenu__item
+                                a(href="#") Строение и функции носа
+                            li.header__articlesMenu__item
+                                a(href="#") Анатомия
+                            li.header__articlesMenu__item
+                                a(href="#") Заболевания носа и пазух
+                            li.header__articlesMenu__item
+                                a(href="#") Заболевания носа и пвыаыва
+                            li.header__articlesMenu__item
+                                a(href="#") морская вода
+                .header__nav__itemBlock
+                    a(href="#").header__nav__item заболевания<br />носа и пазух
+                .header__nav__itemBlock
+                    a(href="#").header__nav__item сосудосуживающие<br />средства
+                .header__nav__itemBlock
+                    a(href="#").header__nav__item морская вода
+                .header__nav__itemBlock
+                    a(href="#").header__nav__item полезная<br />информация
+    .header__mobMenuWrap.js-mobMenuBlock
+        nav.header__navMob
+            .header__nav__itemBlock.header__nav__itemBlock--menu.js-drugsBtnMob
+                .header__arrowWrap
+                    a(href="#").header__nav__item.header__nav__item--star препАраты
+                    .header__nav__drugsMenu.js-drugsMenu
+                        .header__drugsType
+                            .header__drugsType__title.header__drugsType__title--green
                                 |Рино
                                 span стоп
                             .header__drugsType__catalog
@@ -34,26 +111,40 @@ header.wrapper.header#header
                                 a(href="#").header__drugsType__item
                                     img(src="./img/drugs-item-blue.png")
                                     span Для взрослых и детей с 6 лет
-                .header__nav__itemBlock.js-articlesBtn
-                    a(href="#").header__nav__item строение<br />и функции носа
-                    .header__articlesMenu.js-articlesMenu
-                        ul.header__articlesMenu__list
-                            li.header__articlesMenu__item
-                                a(href="#") Строение и функции носа
-                            li.header__articlesMenu__item
-                                a(href="#") Анатомия
-                            li.header__articlesMenu__item
-                                a(href="#") Заболевания носа и пазух
-                            li.header__articlesMenu__item
-                                a(href="#") Заболевания носа и пвыаыва
-                            li.header__articlesMenu__item
-                                a(href="#") морская вода
-                .header__nav__itemBlock
-                    a(href="#").header__nav__item заболевания<br />носа и пазух
-                .header__nav__itemBlock
-                    a(href="#").header__nav__item сосудосуживающие<br />средства
-                .header__nav__itemBlock
-                    a(href="#").header__nav__item морская вода
-                .header__nav__itemBlock
-                    a(href="#").header__nav__item полезная<br />информация
-            
+                        .header__drugsType
+                            .header__drugsType__title.header__drugsType__title--purple
+                                |Рино
+                                span стоп
+                                |экстра
+                            .header__drugsType__catalog.header__drugsType__catalog--purple
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-1.png")
+                                    span Для детей с первых дней жизни
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-2.png")
+                                    span Для детей с 1 года и до 6 лет 
+                                a(href="#").header__drugsType__item
+                                    img(src="./img/menu-child-3.png")
+                                    span Для детей с 6 лет и взрослых 
+            .header__nav__itemBlock.js-articlesBtn
+                a(href="#").header__nav__item строение и функции носа
+                .header__articlesMenu.js-articlesMenu
+                    ul.header__articlesMenu__list
+                        li.header__articlesMenu__item
+                            a(href="#") Строение и функции носа
+                        li.header__articlesMenu__item
+                            a(href="#") Анатомия
+                        li.header__articlesMenu__item
+                            a(href="#") Заболевания носа и пазух
+                        li.header__articlesMenu__item
+                            a(href="#") Заболевания носа и пвыаыва
+                        li.header__articlesMenu__item
+                            a(href="#") морская вода
+            .header__nav__itemBlock
+                a(href="#").header__nav__item заболевания носа и пазух
+            .header__nav__itemBlock
+                a(href="#").header__nav__item сосудосуживающиесредства
+            .header__nav__itemBlock
+                a(href="#").header__nav__item морская вода
+            .header__nav__itemBlock
+                a(href="#").header__nav__item полезная информация

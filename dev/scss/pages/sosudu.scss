@@ -1,6 +1,9 @@
 .sosuduTop {
     padding-top: 136px;
 
+    @media (max-width: $screen-md-max) {
+        padding-top: 110px;
+    }
     &__text {
         text-transform: uppercase;
         color: #fff;
@@ -9,6 +12,12 @@
         text-align: center;
         padding-top: 161px;
         padding-bottom: 310px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 22px;
+            padding-top: 105px;
+            padding-bottom: 152px;
+        }
     }
 }
 
@@ -24,6 +33,12 @@
         height: 39px;
         position: absolute;
         top: -39px;
+        
+        @media (max-width: $screen-md-max) {
+            background: url(../img/white-wave-small.png) repeat-x;
+            height: 14px;
+            top: -14px;
+        }
     }
     &:after {
         content: '';
@@ -33,12 +48,23 @@
         position: absolute;
         bottom: -35px;
         transform: rotate(180deg);
+
+        @media (max-width: $screen-md-max) {
+            background: url(../img/white-wave-small.png) repeat-x;
+            height: 14px;
+            bottom: -14px;
+        }
     }
     &__content {
         width: 50%;
         float: left;
         padding-right: 70px;
 
+        @media (max-width: $screen-lg-max) {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
         &__title {
             margin-bottom: 25px;
         }
@@ -52,9 +78,20 @@
             display: flex;
             justify-content: space-between;
             margin-top: 69px;
+
+            @media (max-width: $screen-lg-max) {
+                justify-content: space-around;
+            }
+            @media (max-width: $screen-xs-max) {
+                flex-wrap: wrap;
+            }
         }
         &__item {
             width: 150px;
+
+            @media (max-width: $screen-lg-max) {
+                width: 110px;
+            }
         }
         &__itemImg {
             margin-bottom: 14px;
@@ -75,6 +112,10 @@
         padding-top: 80px;
         width: 50%;
 
+        @media (max-width: $screen-lg-max) {
+            width: 100%;
+            padding-top: 0;
+        }
         & img {
             display: block;
             margin: 0 auto;
@@ -92,6 +133,17 @@
 
             &:first-child {
                 padding-left: 60px;
+                
+                @media (max-width: $screen-lg-max) {
+                    padding-left: 0;
+                }
+            }
+            @media (max-width: $screen-lg-max) {
+                text-align: center;
+                padding-left: 0;
+            }
+            @media (max-width: $screen-xs-max) {
+                font-size: 12px;
             }
         }
     }
@@ -100,15 +152,32 @@
 .sosuduWhatIs {
     background: #f5f5f5;
     padding: 89px 0 47px;
-
+    
+    &__title {
+         @media (max-width: $screen-md-max) {
+             margin-bottom: 50px;
+         }
+    }
     &__imgSide {
         float: left;
         width: 385px;
-
+        
+        @media (max-width: $screen-md-max) {
+            width: 300px;
+        }
         & img  {
             position: relative;
             top: 27px;
             left: -20px;
+        }
+        @media (max-width: $screen-md-max) {
+            width: 100%;
+
+            & img {
+                position: inherit;
+                display: block;
+                margin: 0 auto 20px;
+            }
         }
     }
     &__textSide {
@@ -117,7 +186,10 @@
         font-size: 14px;
         padding-top: 150px;
 
-
+        @media (max-width: $screen-md-max) {
+             padding-top: 0;
+             width: 100%;
+        }
         &__greenLine {
             display: block;
             text-transform: uppercase;
@@ -129,6 +201,13 @@
             display: block;
             max-width: 460px;
             margin-bottom: 21px;
+        }
+        &__tableWrap {
+            width: 100%;
+
+            @media (max-width: $screen-sm-max) {
+                overflow: auto;
+            }
         }
         &__table {
             width: 100%;
@@ -210,15 +289,27 @@
             padding-bottom: 50px;
             & .sosuduWhatIs__textSide {
                 padding-top: 141px;
+                
+                @media (max-width: $screen-md-max) {
+                    padding-top: 0;
+                }
             }
             & img {
                 top: 39px;
                 left: 121px;
             }
+            @media (max-width: $screen-md-max) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
         }
         &:nth-child(4) {
             & .sosuduWhatIs__textSide {
                 padding-top: 90px;
+
+                @media (max-width: $screen-md-max) {
+                    padding-top: 0;
+                }
             }
             & img {
                 top: 92px;
@@ -228,10 +319,18 @@
         &:nth-child(5) {
             & .sosuduWhatIs__textSide {
                 padding-top: 81px;
+
+                @media (max-width: $screen-md-max) {
+                    padding-top: 0;
+                }
             }
             & img {
                 top: 156px;
                 left: 133px;
+            }
+            @media (max-width: $screen-md-max) {
+                display: flex;
+                flex-direction: column-reverse;
             }
         }
     }
@@ -254,6 +353,12 @@
             font-size: 18px;
             line-height: 1.3;
 
+            @media (max-width: $screen-md-max) {
+                float: none;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
         }
         &__items {
             float: right;
@@ -262,11 +367,33 @@
             display: flex;
             justify-content: space-between;
             width: calc(100% - 150px);
+
+            @media (max-width: $screen-md-max) {
+                float: none;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-right: -3.33%;
+            }
+            @media (max-width: $screen-xs-max) {
+                margin-right: 0;
+                justify-content: space-between;
+            }
         }
     }
     &__item {
         width: calc((100% - 60px)/5);
-
+        
+        @media (max-width: $screen-md-max) {
+            width: 30%;
+            margin-right: 3.33%;
+            margin-bottom: 20px;
+        }
+        @media (max-width: $screen-xs-max) {
+            width: 45%;
+            margin-right: 0;
+            margin-bottom: 20px; 
+        }
         &__img {
             margin-bottom: 10px;
 
@@ -293,6 +420,21 @@
         display: -ms-flex;
         display: flex;
         justify-content: center;
+        // padding-top: 30px;
+
+        @media (max-width: $screen-lg-max) {
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-right: -3.33%;
+            padding-top: 20px;
+        }
+        @media (max-width: $screen-lg-max) {
+            margin-right: -5%;
+        }
+         @media (max-width: $screen-sm-max) {
+            margin-right: 0;
+        }
     }
     &__img {
         height: 100%;
@@ -304,7 +446,10 @@
         & img {
             position: absolute;
             top: -158px;
-            left: 0;
+            left: 0;    
+        }
+        @media (max-width: $screen-lg-max) {
+            display: none;
         }
     }
     &__item {
@@ -420,6 +565,30 @@
                 right: 553px;
             }
         }
+        @media (max-width: $screen-lg-max) {
+            position: relative;
+            width: 30%;
+            display: block;
+            margin-right: 3.33%;
+            left: auto;
+            top: auto;
+            margin-bottom: 30px;
+
+            &:before {
+                content: normal;
+            }
+             &:after {
+                content: normal;
+            }
+        }
+        @media (max-width: $screen-lg-max) {
+            width: 45%;
+            margin-right: 5%;
+        }
+        @media (max-width: $screen-sm-max) {
+            margin-right: 0;
+            width: 100%;
+        }
     }
 }
 
@@ -437,6 +606,9 @@
         max-width: 570px;
         margin: 0 auto 32px;
 
+        @media (max-width: $screen-sm-max) {
+            font-size: 21px;
+        }
         & span {
             font-size: 14px;
             position: relative;
@@ -458,7 +630,18 @@
         text-align: center;
         letter-spacing: -2px;
         position: relative;
-
+        
+        @media (max-width: $screen-md-max) {
+            font-size: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        @media (max-width: $screen-sm-max) {
+            font-size: 40px;
+        }
+        @media (max-width: $screen-xs-max) {
+            font-size: 21px;
+        }
         &:before {
             content: '';
             background-image: url(../img/sosud1.png);
@@ -468,6 +651,10 @@
             width: 956px;
             height: 347px;
             top: 0;
+
+            @media (max-width: $screen-md-max) {
+                content: normal;
+            }
         }
         &--purple:before {
             background-image: url(../img/sosud2.png);
@@ -478,10 +665,21 @@
         display: -ms-flex;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $screen-sm-max) {
+            display: block;
+        }
     }
     &__leftInfo {
         max-width: 600px;
         padding-top: 31px;
+
+        @media (max-width: $screen-lg-max) {
+            max-width: 460px;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 100%;
+        }
     }
     &__infoTitle {
         text-transform: uppercase;
@@ -496,6 +694,9 @@
         list-style: none;
         font-size: 14px;
 
+        @media (max-width: $screen-md-max) {
+            padding-right: 10px;
+        }
         &:before {
             content: '';
             display: block;
@@ -516,6 +717,13 @@
         display: -ms-flex;
         display: flex;
         line-height: 1.3;
+
+        @media (max-width: $screen-lg-max) {
+            padding-top: 30px;
+        }
+        @media (max-width: $screen-sm-max) {
+            max-width: none;
+        }
     }
     &__rightPercents {
         font: 33px $GPB;
@@ -524,7 +732,13 @@
         padding-right: 10px;
         line-height: 0.9;
         padding-top: 4px;
-
+        
+        @media (max-width: $screen-md-max) {
+            font-size: 24px;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 130px;
+        }
         & span {
             display: block;
             margin-bottom: 5px;
@@ -533,6 +747,13 @@
     &__rightText {
         width: 285px;
         font-size: 17px;
+
+        @media (max-width: $screen-sm-max) {
+            width: 100%;
+        }
+        @media (max-width: $screen-xs-max) {
+            font-size: 14px;
+        }
     }
     &__purple {
         & .sosuduComponents__name {

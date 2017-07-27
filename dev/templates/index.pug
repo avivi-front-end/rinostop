@@ -3,11 +3,12 @@ include ../chunks/mixin.pug
 html(lang="ru").no-js
     head
         include ../chunks/head.pug
-    block body
+    body
         include ../chunks/svgsprite/sprite.svg
         .page-wrapper#page-wrapper
             include ../chunks/header.pug
             .page-body#page-body
+                include ../chunks/banner.pug
                 include ../chunks/index.pug
             include ../chunks/footer.pug
 

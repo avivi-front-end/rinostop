@@ -1,6 +1,9 @@
 .rino10Top {
     padding-top: 136px;
 
+    @media (max-width: $screen-sm-max) {
+        overflow: hidden;
+    }
     &__content {
         position: relative;
     }
@@ -10,6 +13,7 @@
         margin: 0 auto 40px;
         position: relative;
         left: -7px;
+        z-index: 2;
 
         &:before {
             content: '';
@@ -27,6 +31,13 @@
         z-index: 2;
         top: 259px;
 
+        @media (max-width: $screen-lg-max) {
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-bottom: 30px;
+        }
+
         &__text {
             font-size: 43px;
             font-family: $GPB;
@@ -36,6 +47,11 @@
             letter-spacing: -0.5px;
             line-height: 1.1;
             margin-bottom: 57px;
+
+            @media (max-width: $screen-lg-max) {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
         }
         &__btn {
             background: #fff;
@@ -54,26 +70,60 @@
     &__drug {
         position: relative;
 
+        @media (max-width: $screen-lg-max) {
+            float: left;
+            width: 50%;
+        }
+        @media (max-width: $screen-md-max) {
+            width: 45%;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 290px;
+            margin: 0 auto 50px;
+            float: none;
+        }
         &__img {
             height: 400px;
             display: block;
+
+            @media (max-width: $screen-sm-max) {
+                    height: 260px;
+                }
             & img {
                 margin: 0 auto;
                 display: block;
                 position: relative;
                 top: -147px;
+
+                @media (max-width: $screen-lg-max) {
+                    top: -130px;
+                }
+                @media (max-width: $screen-md-max) {
+                    top: -70px;
+                }
             }
         }
         &__text {
             position: absolute;
-            font-size: 12px;
+            font-size: 16px;
             color: #fff;
             left: 0;
             right: 0;
             top: 310px;
             margin: auto;
-            width: 85px;
+            width: 120px;
             text-align: center;
+            
+            @media (max-width: $screen-md-max) {
+                top: 268px;
+            }
+            @media (max-width: $screen-sm-max) {
+                position: relative;
+                top: auto;
+                left: auto;
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
     &__rightSide {
@@ -84,11 +134,29 @@
         width: 390px;
         z-index: 2;
 
+        @media (max-width: $screen-lg-max) {
+            left: auto;
+            top: auto;
+            float: right;
+            position: relative;
+        }
+        @media (max-width: $screen-md-max) {
+            width: 370px;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 290px;
+            margin: 0 auto;
+            float: none;
+        }
         &__img {
             width: 169px;
             height: 264px;
             padding-top: 22px;
 
+            @media (max-width: $screen-sm-max) {
+                width: 130px;
+                padding-top: 0;
+            }
             & svg {
                 width: inherit;
                 height: inherit;
@@ -101,15 +169,29 @@
             left: 65px;
             padding-left: 139px;
             width: 309px;
-
+            
+            @media (max-width: $screen-sm-max) {
+                padding-left: 100px;
+                font-size: 12px;
+                width: 210px;
+                left: 48px;
+            }
             &--top {
                 top: 19px;
             }
             &--center {
                 top: 112px;
+
+                @media (max-width: $screen-sm-max) {
+                    top: 85px;
+                }
             }
             &--bottom {
                 top: 226px;
+
+                @media (max-width: $screen-sm-max) {
+                    top: 160px;
+                }
             }
             &:before {
                 content: '';
@@ -120,6 +202,10 @@
                 background: #fff839;
                 top: 27px;
                 left: 18px;
+
+                @media (max-width: $screen-sm-max) {
+                    width: 73px;
+                }
             }
             & span {
                 width: 34px;
@@ -157,7 +243,7 @@
             }
         }
         & .rino10Top__drug__text {
-            width: 140px;
+            width: 165px;
         }
 
     }
@@ -193,6 +279,12 @@
         height: 39px;
         position: absolute;
         top: -39px;
+
+        @media (max-width: $screen-md-max) {
+            background: url(../img/white-wave-small.png) repeat-x;
+            height: 14px;
+            top: -14px;
+        }
     }
     &:after {
         content: '';
@@ -202,9 +294,20 @@
         position: absolute;
         bottom: -35px;
         transform: rotate(180deg);
+
+        @media (max-width: $screen-md-max) {
+            background: url(../img/white-wave-small.png) repeat-x;
+            height: 14px;
+            bottom: -14px;
+        }
     }
     &__title {
         margin-bottom: 15px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
     }
     &__items {
         width: 800px;
@@ -213,6 +316,14 @@
         display: -ms-flex;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $screen-md-max) {
+            width: 100%;
+        }
+        @media (max-width: $screen-sm-max) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__item {
         width: 200px;
@@ -224,6 +335,10 @@
                 width: 122px;
                 display: block;
                 margin: 0 auto;
+            }
+            @media (max-width: $screen-sm-max){
+                width: 100%;
+                margin-bottom: 30px;
             }
         }
         &__text {
@@ -247,6 +362,10 @@
 
     &__title {
         margin-bottom: 58px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 21px;
+        }
     }
     &__items {
         display: -webkit-flex;
@@ -258,6 +377,13 @@
     &__item {
         width: calc((100% - 60px)/3);
 
+        @media (max-width: $screen-md-max) {
+            width: calc((100% - 30px)/2);
+            margin-bottom: 30px;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 100%;
+        }
         &__img {
             margin-bottom: 16px;
             & img {
@@ -313,6 +439,10 @@
 
     &__title {
         margin-bottom: 35px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 21px;
+        }
     }
     &__items {
         position: relative;
@@ -322,11 +452,22 @@
             display: -ms-flex;
             display: flex;
             justify-content: space-between;
+            
+            @media (max-width: $screen-md-max) {
+                flex-wrap: wrap;
+            }
         }
     }
     &__item {
         width: calc((100% - 150px)/6);
 
+        @media (max-width: $screen-md-max)  {
+            width: calc((100% - 90px)/3);
+            margin-bottom: 40px;
+        }
+        @media (max-width: $screen-sm-max)  {
+            width: 100%;
+        }
         &__img {
             margin-bottom: 25px;
 
@@ -346,7 +487,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 360px;
+        max-width: 360px;
         font-style: italic;
     }
     &--adult {

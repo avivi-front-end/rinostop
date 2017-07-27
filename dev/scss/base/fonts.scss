@@ -48,9 +48,20 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Attentica 4F';
+	src: url('fonts/Attentica4F-UltraLight/Attentica4F-UltraLight.eot');
+	src: url('fonts/Attentica4F-UltraLight/Attentica4F-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Attentica4F-UltraLight/Attentica4F-UltraLight.woff') format('woff'),
+		url('fonts/Attentica4F-UltraLight/Attentica4F-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
 
 $GP: 'Gotham Pro', sans-serif;
 $GPB: 'Gotham Pro Bold', sans-serif;
 $GPM: 'Gotham Pro Medium', sans-serif;
 $GPL: 'Gotham Pro Light', sans-serif;
 $GPBlack: 'Gotham Pro Black', sans-serif;
+$A4F: 'Attentica 4F', sans-serif;

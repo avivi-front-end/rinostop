@@ -78,7 +78,7 @@ $(document).ready(function() {
     var articlesMenu = $(".js-articlesMenu");
 
     articlesBtn.mouseenter(function() {
-        articlesMenu.css("display", "block");
+        articlesMenu.css("display", "block");a
         articlesBtn.addClass("active");
     });
 
@@ -98,16 +98,12 @@ $(document).ready(function() {
 
     var lostMause = function(target) {
         target.removeClass("active");
-        // setTimeout(function() {
-            if(!drugsBtn.hasClass("active") && !drugsMenu.hasClass("active")) {
-                drugsMenu.css("display", "none");
-            }
-        // }, 200);
-        // setTimeout(function() {
-            if(!articlesBtn.hasClass("active") && !articlesMenu.hasClass("active")) {
-                articlesMenu.css("display", "none");
-            }
-        // }, 200);
+        if(!drugsBtn.hasClass("active") && !drugsMenu.hasClass("active")) {
+            drugsMenu.css("display", "none");
+        }
+        if(!articlesBtn.hasClass("active") && !articlesMenu.hasClass("active")) {
+            articlesMenu.css("display", "none");   
+        }
     };
 
     $('.js-dignitySlider').slick({
@@ -123,17 +119,61 @@ $(document).ready(function() {
         arrows: false,
         swipe: false,
         centerMode: true,
-        pauseOnHover: false
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     })
 
     $('.js-noseSlider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         fade: true,
         arrows: true,
         infinite: true,
         asNavFor: '.js-namesSlider',
         pauseOnHover: false
+    })
+
+    $('.js-drugsBtnMob').on('click', function(e) {
+        e.preventDefault();
+        $('.js-drugsMenu').slideToggle();
+        $(this).toggleClass('active');
+    })
+
+    $('.js-menuBtn').on('click' ,function (e) {
+        e.preventDefault();
+        $('.js-mobMenuBlock').slideToggle();
+    })
+
+    $('.js-changeBtn').on('click', function (e) {
+        e.preventDefault();
+        $(this).css('display', 'none');
+        $('.js-oldItem').css('display', 'none');
+        $('.js-babeItem').css('display', 'block');
+    })
+
+    $('.js-backContent').on('click', function () {
+        $('.js-changeBtn').css('display', 'block');
+        $('.js-oldItem').css('display', 'block');
+        $('.js-babeItem').css('display', 'none');
+    })
+
+    $('.js-upBtn').on('click', function() {
+        var toTop = $(window).scrollTop();
+        $('body').animate({scrollTop: 0 }, 1000);
+        console.log(toTop)
     })
 })

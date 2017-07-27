@@ -2,9 +2,25 @@
     padding-top: 136px;
     overflow: hidden;
 
+    @media (max-width: $screen-sm-max) {
+        padding-top: 360px;
+    }
+    &--all {
+       @media (max-width: $screen-sm-max) {
+            padding-top: 100px;
+
+            & .indexPage__info {
+                margin-bottom: 0;
+            }
+        } 
+    }
     &__item {
         width: 50%;
-        float: left
+        float: left;
+
+        @media (max-width: $screen-sm-max) {
+            width: 100%;
+        }
     }
     &__logo {
         margin-bottom: 95px;
@@ -30,6 +46,10 @@
         }
         &--blue {
             margin-bottom: 60px;
+
+            @media (max-width: $screen-md-max) {
+                margin-bottom: 15px;
+            }
             span {
                 width: 200px;
                 left: 6px;
@@ -47,13 +67,34 @@
     &__slogan {
         font: 36px $GPB;
         text-transform: uppercase;
-        color: #abe3d2;
         text-align: center;
         line-height: 1;
         margin-bottom: 225px;
+        z-index: 3;
+        position: relative;
 
         &--blue {
             color: #fff;
+        }
+        & a {
+            color: #fff;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        @media (max-width: $screen-lg-max) {
+            font-size: 24px;
+            max-width: 300px;
+            margin: 0 auto 200px
+        }
+        @media (max-width: $screen-md-max) {
+             margin-bottom: 288px;
+        }
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 45px;
         }
     }
     &__info {
@@ -63,6 +104,23 @@
         padding: 54px 30px 45px;
         line-height: 1.1;
 
+        @media (max-width: $screen-md-max) {
+            width: 100%;
+            padding: 25px 30px 20px;
+            right: 20px;
+        }
+        &--right {
+            @media (max-width: $screen-md-max) {
+                right: auto;
+                left: 20px;
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            right: 0;
+            left: 0;
+            margin-bottom: 80px;
+            max-width: 320px;
+        }
         &__textWrap {
             position: absolute;
             left: 0;
@@ -74,12 +132,50 @@
             height: 192px;
             overflow: hidden;
             // z-index: -1;
+            
+            & img {
+                width: 100%;
+            }
+            @media (max-width: $screen-md-max) {
+                width: 100%;
+            }
+            
+        }
+        &__textNew {
+            text-transform: uppercase;
+            display: block;
+            color: #d82d30;
+            font-size: 13px;
+            font-family: $GPM;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 17px;
+            z-index: 1 !important;
+        }
+        &__sprey {
+            &--sprey {
+                height: 270px;
+                position: relative;
+
+                & img {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -45px;
+                    max-width: none;
+                }
+            }
         }
         &__text {
             letter-spacing: -0.8px;
             position: relative;
             z-index: 2;
 
+            @media (max-width: $screen-sm-max) {
+                font-size: 14px;
+            }
             & span {
                 font-family: $GPBlack;
                 font-size: 14px;
@@ -101,6 +197,13 @@
                 padding: 25px 10px;
                 text-align: center;
                 font-size: 14px;
+
+                & span {
+                    z-index: -1;
+                }
+                & .indexPage__info__textBtn {
+                    margin-top: 15px;
+                }
             }
             & .italic {
                 font-style: italic;
@@ -113,19 +216,21 @@
         &__textBtn {
             margin: 30px auto 0;
             height: 33px;
-            width: 121px;
+            width: 125px;
             background: transparent;
             text-transform: uppercase;
             border: 2px solid #01a54f;
             border-radius: 8px;
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: -webkit-flex;
+            // display: -ms-flex;
+            // display: flex;
+            // justify-content: center;
+            text-align: center;
+            // align-items: center;
             color: #01a54f;
             font-family: $GPM;
-            font-size: 16px;
+            font-size: 15px;
+            padding: 0;
 
             &--blue {
                 border-color: #035994;
@@ -147,9 +252,21 @@
                 border-color: #987cb7;
                 color: #987cb7;
             }
+            &--purpleLight {
+                border-color: #b88fb6;
+                color: #b88fb6;
+            }
+            &--purpleMiddle {
+                border-color: #663285;
+                color: #663285;
+            }
+            &--purpleStrong {
+                border-color: #302269;
+                color: #302269;
+            }
         }
         &--sprey {
-            width: 430px;
+            width: 100%;
             display: -webkit-flex;
             display: -ms-flex;
             display: flex;
@@ -157,8 +274,23 @@
             padding-top: 0;
             padding-bottom: 20px;
 
+            @media (max-width: $screen-lg-max) {
+                padding: 0 0 20px;
+            }
+            @media (max-width: $screen-md-max) {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
             .indexPage__info__textWrap {
                 width: 169px;
+            }
+            .indexPage__info__text {
+                padding: 45px 10px 25px;
+            }
+            .indexPage__info__item {
+                @media (max-width: $screen-md-max) {
+                    margin: 0 50px 60px;
+                }
             }
         }
         &--all {
@@ -170,6 +302,12 @@
             padding-top: 0;
             padding-bottom: 20px;
 
+            @media (max-width: $screen-lg-max) {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding-top: 80px;
+            }
             .indexPage__info__textWrap {
                 width: 100%;
                 z-index: -1;
@@ -186,7 +324,14 @@
         margin: auto;
         top: 290px;
         width: 170px;
+        z-index: 2;
 
+        @media (max-width: $screen-md-max) {
+            top: 300px;
+        }
+        @media (max-width: $screen-sm-max) {
+            top: -235px;
+        }
         & .testBtn {
             color: #21a290;
             background: #fff;
@@ -213,6 +358,9 @@
         }
     }
     &--sprey {
+        @media (max-width: $screen-sm-max) {
+            padding-top: 136px;
+        }
         .indexPage__item {
             width: 100%;
         }
@@ -250,9 +398,35 @@
         }
         .indexPage__info__item {
             width: 220px;
+
+            @media (max-width: $screen-lg-max) {
+                width: 260px;
+                margin: 0 40px;
+
+                &:nth-child(-2n+1) {
+                    margin-bottom: 165px;
+                } 
+            }
+            @media (max-width: $screen-md-max) {
+                margin: 0;
+
+                &:nth-child(-2n+1) {
+                    margin-bottom: 165px;
+                } 
+            }
+            @media (max-width: $screen-sm-max) {
+               
+                &:not(:last-child) {
+                    margin-bottom: 145px;
+                }
+            }
         }
         .indexPage__info__text {
             padding-bottom: 65px;
+
+            @media (max-width: $screen-lg-max) {
+                padding-bottom: 77px;
+            }
         }
         .indexPage__info__textBtn {
             position: absolute;

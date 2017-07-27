@@ -12,17 +12,11 @@
                 a(href="#").breadcrumbs__socItem.breadcrumbs__socItem--vk
         .normTop__wrap
             .normTop__rino
-                span.normTop__rino__words природная сила<br />морской воды
                 span.normTop__rino__img
                     img(src="./img/other-svg/rino-blue.svg")
+                span.normTop__rino__words природная сила<br />морской воды
             .normTop__drug.normTop__drug--wrap
                 span.normTop__drugOther 50 мл удобная карманная форма
-                .normTop__drug__btnWrap.normTop__drug__btnWrap--pos
-                    button(type="button").normTop__downloadBtn.downloadBtn
-                        span.downloadBtn__text скачать инструкцию
-                        span.downloadBtn__icon
-                            +icon('download')
-                    span.normTop__drug__label *Изделие медицинского назначение
                 .normTop__drug__img
                     img(src="./img/forte-banka.png")
                 span.normTop__drug__option.normTop__drug__option--top
@@ -35,6 +29,12 @@
                     span.normTop__drug__textSign
                     |равномерное орошение
                 span.normTop__drug__numbers.normTop__drug__numbers--babe 125 мл
+                .normTop__drug__btnWrap.normTop__drug__btnWrap--pos
+                    button(type="button").normTop__downloadBtn.downloadBtn
+                        span.downloadBtn__text скачать инструкцию
+                        span.downloadBtn__icon
+                            +icon('download')
+                    span.normTop__drug__label *Изделие медицинского назначение
 
 .domainSection.domainSection--forte
     .domainSection__wrapper
@@ -185,53 +185,90 @@
                 span.spreyUsing__titleItem ®
                 | аква форе:  
             .spreyUsing__itemFor.spreyUsing__itemFor--forte
-                span.spreyUsing__itemForText ДЕТЯМ СТАРШЕ 2-х ЛЕТ И ВЗРОСЛЫМ
+                span.spreyUsing__itemForText.js-backContent ДЕТЯМ СТАРШЕ 2-х ЛЕТ И ВЗРОСЛЫМ
                 .normTop__drug__btnWrap
                     button(type="button").normTop__downloadBtn.downloadBtn
                         span.downloadBtn__text скачать инструкцию
                         span.downloadBtn__icon
                             +icon('download')
-            .spreyUsing__itemChild
+            a(href="#").spreyUsing__itemChild.js-changeBtn
                 span ДЕТЯМ<br />ДО 2-х ЛЕТ
                 |орошение производить в положении ребенка лежа на боку
             .spreyUsing__content
-                .spreyUsing__item
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-1.png")
                     .spreyUsing__itemText
                         span 1.
-                        |очистить носовые ходы ребенка перед использованием РИНОСТОП® АКВА ФОРТЕ
-                .spreyUsing__item
+                        |Высморкаться, чтобы очистить полость носа от слизи перед использованием РИНОСТОП® АКВА ФОРТЕs
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-2.png")
                     .spreyUsing__itemText
                         span 2.
                         |снять прозрачный защитный колпачок с баллончика
-                .spreyUsing__item
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-3.png")
                     .spreyUsing__itemText
                         span 3.
                         |Наклониться вперед над раковиной и повернуть голову вбок. Аккуратно ввести наконечник насадки распылителя в носовой ход, находящийся сверху.Нажать на распылитель и производить введение раствора в течении нескольких секунд
-                .spreyUsing__item
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-4.png")
                     .spreyUsing__itemText
                         span 4.
                         |Наклонить голову в противоположную сторону и провести процедуру с другим носовым ходом.
-                .spreyUsing__item
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-5.png")
                     .spreyUsing__itemText
                         span 5.
                         |Высморкаться, используя правильную технику: слегка приоткрыв рот, зажимая по очереди одну ноздрю, с небольшим усилием продувать вторую.
-                .spreyUsing__item
+                .spreyUsing__item.js-oldItem
                     .spreyUsing__itemImg
                         img(src="./img/forteUsing-6.png")
                     .spreyUsing__itemText
                         span 6.
                         |Хорошо промыть насадку-распылитель теплой водой и вытереть насухо
-            //- .spreyUsing__bottomMes повторить процедуру при необходимости            
+                
+
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-1.png")
+                    .spreyUsing__itemText
+                        span 1.
+                        |очистить носовые ходы ребенка перед использованием РИНОСТОП® АКВА БЕБИ
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-2.png")
+                    .spreyUsing__itemText
+                        span 2.
+                        |снять прозрачный защитный колпачок с баллончика повернуть ребенка на бок, аккуратно ввести наконечник насадки распылителя в носовой ход, находящийся сверху, нажать на распылитель и вводить раствор в течение нескольких секунд.
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-3.png")
+                    .spreyUsing__itemText
+                        span 3.
+                        |повернуть ребенка на другой бок и провести процедуру с другим носовым ходом
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-4.png")
+                    .spreyUsing__itemText
+                        span 4.
+                        |вернуть ребенка в вертикальное положение, позволяя раствору оказать действие в течение нескольких секунд, затем очистить полость носа аспиратором
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-5.png")
+                    .spreyUsing__itemText
+                        span 5.
+                        |детям до 2-х лет сморкаться не рекомендуется из-за риска развития отита, вытереть остатки
+                .spreyUsing__item.js-babeItem
+                    .spreyUsing__itemImg
+                        img(src="./img/babeUsing-6.png")
+                    .spreyUsing__itemText
+                        span 6.
+                        |после каждого использования хорошо промывать носовую насадку-распылитель горячей водой и вытирать насухо
 
 .spreySchedule.spreySchedule--forte
     .spreySchedule__clock
