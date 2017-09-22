@@ -102,27 +102,133 @@
                     
             }
         }
-        &--wrap:before {
-            content: '';
-            position: absolute;
-            @include sprite($forte-banka-wrap);
-            left: 50%;
-            transform: translateX(-50%);
-            top: 43px;
+        &--wrap {
+            position: relative;
+            height: 360px;
+            padding-top: 60px;
+            cursor: pointer;
 
             @media (max-width: $screen-md-max) {
-                content: normal;
+                padding-top: 0;
+                height: auto;
+            }
+            &:before {
+                content: '';
+                @include sprite($rotation-circle);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+
+                @media (max-width: $screen-md-max) {
+                    display: none;
+                }
+            }
+            & .normTop__drug__btnWrap {
+                left: -220px;
+
+                @media (max-width: $screen-sm-max) {
+                    left: 20px;
+                }
             }
         }
-        &--wrapSoft:before {
-            content: '';
-            position: absolute;
-            @include sprite($soft-banka-wrap);
-            left: -134px;
-            top: -138px;
+        // &--wrap:before {
+        //     content: '';
+        //     position: absolute;
+        //     @include sprite($forte-banka-wrap);
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     top: 43px;
 
-            @media (Max-width: $screen-md-max) {
-                content: normal;
+        //     @media (max-width: $screen-md-max) {
+        //         content: normal;
+        //     }
+        // }
+        // &--wrapSoft:before {
+        //     content: '';
+        //     position: absolute;
+        //     @include sprite($soft-banka-wrap);
+        //     left: -134px;
+        //     top: -138px;
+
+        //     @media (Max-width: $screen-md-max) {
+        //         content: normal;
+        //     }
+        // }
+        &__rotationWrap {
+            position: absolute;
+            left: 146px;
+            top: 22px;
+            transition: transform 1s;
+
+            @media (max-width: $screen-md-max) {
+                position: relative;
+                top: auto;
+                left: auto;
+                width: 195px;
+                margin: 0 auto 40px;
+            }
+            @media (max-width: $screen-sm-max) {
+                left: -50px;
+            }
+            @media (max-width: $screen-xs-max) {
+                left: -76px;
+            }
+            & .normTop__drug__option {
+                left: 160px;
+
+                @media (max-width: $screen-xs-max) {
+                    left: 145px;
+                }
+                &--top {
+                    // left: 40px;
+                }
+            }
+
+            & .normTop__drug__numbers {
+                top: auto;
+                bottom: -25px;
+                right: -8px;
+
+                @media (max-width: $screen-md-max) {
+                    bottom: -45px;
+                    top: 325px;
+                }
+                @media (max-width: $screen-xs-max) {
+                    left: 33px;
+                }
+            }
+            .normTop__drug__img {
+                width: 195px;
+
+                & img {
+                    left: -119px;    
+                    transform: translateX(0);
+                    opacity: 0.6;
+
+                    @media (max-width: $screen-md-max) {
+                        opacity: 1;
+                    }
+                }
+            }
+            &--second {
+                .normTop__drug__img img {
+                    top: 45px;
+                    left: 21px;
+                }
+                .normTop__drug__option {
+                    left: 136px;
+                    &--top {
+                        top: 48px;
+                    }
+                    &--center {
+                        top: 131px;
+                    }
+                    &--bottom {
+                        top: 225px;
+                    }
+                }
             }
         }
         &__option {
@@ -227,14 +333,10 @@
                 margin: 0 auto;
             }
             &--pos {
-                left: -240px;
+                left: -200px;
 
-                @media (max-width: $screen-lg-max) {
-                    left: -200px;
-
-                    @media (Max-width: $screen-md-max)  {
-                        left: -35px;
-                    }
+                @media (Max-width: $screen-md-max)  {
+                    left: -35px;
                 }
             }
         }
@@ -253,8 +355,9 @@
         font: 17px $GPB;
         position: absolute;
         max-width: 105px;
+        min-width: 65px;
         color: #fff;
-        left: -80px;
+        right: 195px;
         top: 119px;
 
         @media (max-width: $screen-md-max) {
@@ -709,8 +812,8 @@
                     }
                 }
                 &--3 {
-                    width: 410px;
-                    height: 410px;
+                    width: 420px;
+                    height: 420px;
                     top: 408px;
                     left: 46px;
                     padding: 84px 82px 30px;
@@ -1378,6 +1481,19 @@
     &--forte {
         background: #a688ca;
     }
+    &--care {
+        position: relative;
+        padding-bottom: 100px;
+
+        &:before {
+            content: '';
+            width: 100%;
+            background: url(../img/pink-wave.png) repeat-x;
+            height: 39px;
+            position: absolute;
+            top: -39px;
+        }
+    }
     &__wrapper {
         position: relative;
     }
@@ -1544,6 +1660,10 @@
             transform: translateX(-50%);
             bottom: 0;
         }
+
+        &--left {
+            right: 15px;
+        }
     }
     &__itemText {
         font-size: 14px;
@@ -1690,6 +1810,18 @@
         }
         & .spreySchedule__leftItem , .spreySchedule__rightItem {
             color: #25bebe;
+        }
+        & .spreySchedule__center img {
+            left: -23px;
+            transform: translateX(0);
+
+            @media (max-width: $screen-md-max) {
+                left: 8px;
+            }
+            @media (max-width: $screen-sm-max) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
     &--soft {

@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
   .lte-ie-11 &, .lt-ie-11 & {
     min-height: 0;
   }

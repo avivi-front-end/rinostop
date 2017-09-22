@@ -1,0 +1,373 @@
+.careTop {
+    padding-top: 160px;
+    padding-bottom: 330px;
+
+    @media (max-width: $screen-md-max) {
+        padding-bottom: 240px;
+    }
+    &__text {
+        padding-top: 200px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 37px;
+        font-family: $GPB;
+        text-align: center;
+
+        @media (max-width: $screen-md-max) {
+            padding-top: 120px;
+        }
+        @media (max-width: $screen-sm-max) {
+            padding-top: 50px;
+            font-size: 26px;
+        }
+    }
+}   
+
+.careInfo {
+    padding-top: 90px;
+    position: relative;
+    padding-bottom: 35px;
+
+    @media (max-width: $screen-xs-max) {
+        padding-top: 60px;
+    }
+    &:before {  
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave-shadow.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        top: -39px;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        bottom: -35px;
+        transform: rotate(180deg);
+    }
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: $GPB;
+        color: #754a93;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 14px;
+        color: #646464;
+        margin-bottom: 47px;
+        line-height: 1.4;
+
+        @media (max-width: $screen-md-max) {
+            margin-bottom: 35px;
+        }
+        &--indent {
+            margin-bottom: 30px;
+        }
+    }
+    &__wrap {
+        padding-right: 370px;
+        position: relative;
+
+        @media (max-width: $screen-md-max) {
+            padding-right: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: -25px;
+
+        @media (max-width: $screen-md-max) {
+            position: relative;
+            top: 0;
+            margin-bottom: 35px;
+            display: block;
+        }
+
+        & img {
+            @media (max-width: $screen-md-max) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    &__smallTitle {
+        font-size: 20px;
+        font-family: $GPB;
+        color: #754a93;
+        margin-bottom: 30px;
+
+        &--light {
+            color: #a688ca;
+        }
+    }
+    &__list {
+        list-style: none;
+    }
+    &__listItem {
+        padding-left: 36px;
+        position: relative;
+        margin-bottom: 18px;
+        font-size: 14px;
+        color: #646464;
+        position: relative;
+
+        &:before {
+            content: '';
+            @include sprite($exclaim);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+}
+
+.coreAcva {
+    padding-top: 110px;
+    background: #f5f5f5;
+
+    @media (max-width: $screen-xs-max) {
+        padding-top: 80px;
+    }
+    &__topWrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width: $screen-md-max) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+    }
+    &__textBlock {
+        max-width: 600px;
+        line-height: 1.3;
+        color: #646464;
+
+        @media (max-width: $screen-lg-max) {
+            margin-right: 20px;
+        }
+        @media (max-width: $screen-md-max) {
+            max-width: none;
+        }
+    }
+    &__img {
+        
+        @media (max-width: $screen-md-max) {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+    }
+    &__textTitle {
+        font-family: $GPB;
+        font-size: 20px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+        color: #a688ca;
+    }
+    &__items {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $screen-md-max) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: $screen-sm-max) {
+            justify-content: center;
+        }
+    }
+    &__itemsLabel {
+        position: absolute;
+        font-style: italic;
+        color: #646464;
+        font-size: 12px;
+        left: 0;
+        right: 0;
+        top: 285px;
+        z-index: 2;
+        text-align: center;
+
+        @media (max-width: $screen-lg-max) {
+            top: 233px;
+        }
+        @media (max-width: $screen-md-max) {
+            top: 405px;
+        }
+        @media (max-width: $screen-sm-max) {
+            display: none;
+        }
+    }
+    &__item {
+        width: 270px;
+
+        @media (max-width: $screen-lg-max) {
+            margin: 0 10px 90px;
+        }
+    }
+    &__itemImg {
+        height: 270px;
+        position: relative;
+        margin-bottom: 38px;
+
+        @media (max-width: $screen-lg-max) {
+            height: 220px;
+            // margin-bottom: 20px;
+        }
+        & img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__itemInfo {
+        background: url('../img/care-wave-bg.png') no-repeat;
+        padding: 35px 8px;
+        line-height: 0.9;
+        height: 220px;
+
+        @media (max-width: $screen-lg-max) {
+            height: 250px;
+        }
+        @media (max-width: $screen-md-max) {
+            height: auto;
+        }
+    }
+    &__itemTitle {
+        color: #a688ca;
+        font-family: $GPM;
+        margin-bottom: 14px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &__itemText {
+        text-align: center;
+        line-height: 1.3;
+        font-size: 14px;
+        color: #646464;
+        letter-spacing: -0.5px;
+        font-family: $GPL;
+
+        @media (max-width: $screen-lg-max) {
+            font-size: 13px;
+        }
+        & span {
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.noseBlock {
+    background: #fff;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 145px;
+
+    @media(max-width: $screen-md-max) {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    &:before {  
+        content: '';
+        width: 100%;
+        background: url(../img/white-wave-shadow.png) repeat-x;
+        height: 39px;
+        position: absolute;
+        top: -39px;
+    }
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: $GPB;
+        color: #a688ca;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 14px;
+        color: #646464;
+        line-height: 1.4;
+
+        &--width {
+            max-width: 900px;
+        }
+    }
+    &__wrap {
+        border-bottom: 1px solid #a688ca;
+        padding-bottom: 44px;
+        margin-bottom: 48px;
+        padding-top: 12px;
+
+        @media(max-width: $screen-md-max) {
+            padding-top: 50px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        @media(max-width: $screen-md-max) {
+            margin-bottom: 40px;
+        }
+        @media(max-width: $screen-sm-max) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            margin-bottom: 70px;
+        }
+        &--sides {
+            flex-direction: row-reverse;
+
+            @media(max-width: $screen-sm-max) {
+                flex-direction: column-reverse;
+            }
+            & .noseBlock__textBlock {
+                margin-right: 0;
+                margin-left: 30px;
+
+                @media(max-width: $screen-sm-max) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &__itemImg {
+        @media(max-width: $screen-md-max)  {
+            display: flex;
+            align-items: center;
+        }
+        @media(max-width: $screen-sm-max) {
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    }
+    &__textBlock {
+        max-width: 785px;
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+
+        @media(max-width: $screen-sm-max) {
+            margin-right: 0;
+        }
+    }
+    &__textTitle {
+        font-size: 20px;
+        font-family: $GPB;
+        color: #a688ca;
+        margin-bottom: 21px;
+    }
+    &__footer {
+        max-width: 930px;
+    }
+}

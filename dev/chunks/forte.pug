@@ -15,21 +15,71 @@
                 span.normTop__rino__img
                     img(src="./img/other-svg/rino-blue.svg")
                 span.normTop__rino__words природная сила<br />морской воды
-            .normTop__drug.normTop__drug--wrap
-                span.normTop__drugOther 50 мл удобная карманная форма
-                .normTop__drug__img
-                    img(src="./img/forte-banka.png")
-                span.normTop__drug__option.normTop__drug__option--top
-                    span.normTop__drug__textSign
-                    |гипертонический раствор
-                span.normTop__drug__option.normTop__drug__option--center
-                    span.normTop__drug__textSign
-                    |с 6 месяцев
-                span.normTop__drug__option.normTop__drug__option--bottom
-                    span.normTop__drug__textSign
-                    |равномерное орошение
-                span.normTop__drug__numbers.normTop__drug__numbers--babe 125 мл
-                .normTop__drug__btnWrap.normTop__drug__btnWrap--pos
+            .normTop__drug.normTop__drug--wrap.rotationMobile
+                .normTop__drug__rotationWrap
+                    .normTop__drug__img
+                        img(src="./img/forte-banka.png")
+                    span.normTop__drug__option.normTop__drug__option--top
+                        span.normTop__drug__textSign
+                        |гипертонический раствор
+                    span.normTop__drug__option.normTop__drug__option--center
+                        span.normTop__drug__textSign
+                        |с 6 месяцев
+                    span.normTop__drug__option.normTop__drug__option--bottom
+                        span.normTop__drug__textSign
+                        |равномерное орошение
+                    span.normTop__drug__numbers.normTop__drug__numbers--soft
+                        |125 мл
+                    .normTop__drug__btnWrap.js-rotationFalse
+                        button(type="button").normTop__downloadBtn.downloadBtn
+                            span.downloadBtn__text скачать инструкцию
+                            span.downloadBtn__icon
+                                +icon('download')
+                        span.normTop__drug__label *Изделие медицинского назначение
+                .normTop__drug__rotationWrap.normTop__drug__rotationWrap--second
+                    .normTop__drug__img
+                        img(src="./img/forte-banka-2.png")
+                    span.normTop__drug__option.normTop__drug__option--top
+                        span.normTop__drug__textSign
+                        |гипертонический раствор
+                    span.normTop__drug__option.normTop__drug__option--center
+                        span.normTop__drug__textSign
+                        |с 6 месяцев
+                    span.normTop__drug__option.normTop__drug__option--bottom
+                        span.normTop__drug__textSign
+                        |равномерное орошение
+                    span.normTop__drug__numbers.normTop__drug__numbers--soft
+                        |50 мл удобная карманная форма
+            .normTop__drug.normTop__drug--wrap.js-rotatitonZone.ritationDesktop
+                .normTop__drug__rotationWrap.js-drug1.js-frontItem.js-activeLabels
+                    .normTop__drug__img
+                        img(src="./img/forte-banka.png")
+                    span.normTop__drug__option.normTop__drug__option--top.js-drugLabel 
+                        span.normTop__drug__textSign
+                        |гипертонический раствор
+                    span.normTop__drug__option.normTop__drug__option--center.js-drugLabel 
+                        span.normTop__drug__textSign
+                        |с 6 месяцев    
+                    span.normTop__drug__option.normTop__drug__option--bottom.js-drugLabel
+                        span.normTop__drug__textSign
+                        |равномерное орошение
+                    span.normTop__drugOther.js-drugCapacity 125 мл
+                    span.normTop__drug__numbers.normTop__drug__numbers--babe.js-drugLabel 125 мл
+                .normTop__drug__rotationWrap.normTop__drug__rotationWrap--second.js-drug2.backTop.js-activeCapacity
+                    .normTop__drug__img
+                        img(src="./img/forte-banka-2.png")
+                    span.normTop__drug__option.normTop__drug__option--top.js-drugLabel 
+                        span.normTop__drug__textSign
+                        |гипертонический раствор
+                    span.normTop__drug__option.normTop__drug__option--center.js-drugLabel 
+                        span.normTop__drug__textSign
+                        |с 6 месяцев
+                    span.normTop__drug__option.normTop__drug__option--bottom.js-drugLabel 
+                        span.normTop__drug__textSign
+                        |равномерное орошение
+                    span.normTop__drugOther.normTop__drugOther--small.js-drugCapacity  50 мл удобная карманная форма
+                    span.normTop__drug__numbers.normTop__drug__numbers--babe.js-drugLabel 50 мл
+                .normTop__drug__btnWrap.normTop__drug__btnWrap--pos.js-rotationFalse
                     button(type="button").normTop__downloadBtn.downloadBtn
                         span.downloadBtn__text скачать инструкцию
                         span.downloadBtn__icon

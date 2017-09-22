@@ -227,6 +227,7 @@
 
                 &:first-child {
                     background: #e3eef0;
+                    text-align: left;
                 }
                 &:not(:last-child) {
                     border-right: 1px solid #aebab5;
@@ -254,8 +255,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: 0;
-            bottom: 0;
+            top: 5px;
             margin: auto;
             font-size: 25px;
             height: 32px;
@@ -265,8 +265,7 @@
             content: '';
             @include sprite($checked);
             position: absolute;
-            top: 0;
-            bottom: 0;
+            top: 17px;
             right: 0;
             left: 0;
             margin: auto;
@@ -275,8 +274,7 @@
             content: '';
             @include sprite($minus);
             position: absolute;
-            top: 0;
-            bottom: 0;
+            top: 22px;
             right: 0;
             left: 0;
             margin: auto;
@@ -706,9 +704,7 @@
             background: #646464;
             position: absolute;
             left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+            top: 6px;
         }
     }
     &__rightInfo {

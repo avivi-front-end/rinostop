@@ -26,23 +26,78 @@ button {
 
 .banner {
     position: fixed;
-    bottom: 0;
+    bottom: 1px;
     left: 0;
     right: 0;
     background: #fff;
     z-index: 99;
+    overflow: hidden;
+
+    &.hiddenBanner {
+        position: absolute;
+        bottom: -71px;
+
+        @media (max-width: $screen-md-max) {
+            bottom: -90px;
+        }
+        @media (max-width: $screen-xs-max) {
+            bottom: -130px;
+        }
+
+        & .bannerBtn {
+            display: none;
+        }
+    }
+}
+
+.bannerBtn {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 100%;
 
     &:before {
         content: '';
         @include sprite($eye);
         position: absolute;
-        right: 20px;
+        opacity: 0.6;
         top: 0;
         bottom: 0;
         margin: auto;
+        left: 0;
+        z-index: 1;
+    }
+    @media (max-width: $screen-sm-max) {
+        right: 10px;
+    }
+    & div {
+        position: absolute;
+        right: -420px;
+        height: 100%;
+        background: #d1d1d1;
+        color: #555555;
+        font-size: 14px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 400px;
+        padding-right: 80px;
+        padding-top: 27px;
+        transition: transform 0.4s;
 
         @media (max-width: $screen-sm-max) {
-            right: 10px;
+            display: none;
+        }
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+        & div {
+            transform: translate(-400px);
         }
     }
 }
@@ -53,7 +108,7 @@ button {
     align-items: center;
     text-transform: uppercase;
     font-family: $A4F;
-    font-size: 48px;
+    font-size: 62px;
     color: #999999;
     height: 71px;
 
@@ -116,6 +171,27 @@ button {
     &--forte {
         background: url(../img/topSection-forte.jpg);
     }
+    &--extra {
+        background: url(../img/topSection-extra.jpg);
+    }
+    &--nose {
+        background: url(../img/topSection-nose.jpg);
+    }
+    &--question {
+        background: url(../img/question-Bg.png);
+    }
+    &--contacts {
+        background: url(../img/contacts-Bg.png);
+    }
+    &--care {
+        background: url(../img/care-Bg.jpg);
+    }
+    &--water {
+        background: url(../img/water-Bg.jpg);
+    }
+    &--content {
+        background: url(../img/content-Bg.jpg);
+    }
     background-size: cover !important;
     background-position: center !important;
 }
@@ -161,6 +237,10 @@ button {
         &:not(:last-child) {
             font-family: $GPB;
             border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        &:last-child {
+            cursor: default;
+            pointer-events: none;
         }
     }
     &__social {
@@ -251,4 +331,187 @@ button {
     @media (max-width: $screen-xs-max) {
         font-size: 20px;
     } 
+}
+
+.js-articlesBtn > a {
+    pointer-events: none;
+    cursor: default;
+
+}
+// @keyframes rotationBack {
+//     from {
+//         left: 146px;
+//         top: 22px;
+//     }
+//     70% {
+//         left: 33px;
+//         top: 16px;
+//     }
+//     to {
+//         left: 33px;
+//         top: -6px;
+//     }
+// }
+
+// @keyframes rotationFront {
+//     from {
+//         left: 33px;
+//         top: -6px;
+//     }
+//     70% {
+//         left: 180px;
+//         top: 16px;
+//     }
+//     to {
+//         left: 146px;
+//         top: 22px;
+//     }
+// }
+
+// .rotationBack {
+//     animation-duration: 1.2s;
+//     animation-name: rotationBack;
+//     animation-iteration-count: 1;
+// }
+
+// .rotationFront {
+//     animation-duration: 1.2s;
+//     animation-name: rotationFront;
+//     animation-iteration-count: 1;
+// }
+
+.backLeft {
+    transform: translate(-113px, 0);
+}
+.backTop {
+    transform: translate(-113px,-28px);
+}
+.frontRight {
+    transform: translate(159px, -19px);
+}
+.frontCenter {
+    transform: translate(0,0);
+}
+.js-frontItem {
+    z-index: 2;
+    .normTop__drug__img img {
+        opacity: 1 !important;
+        
+    }
+}
+.js-drugLabel  {
+    display: none !important;
+}
+
+.js-activeLabels .js-drugLabel  {
+    display: block !important;
+}
+
+.js-drugCapacity {
+    display: none;
+}
+
+.js-activeCapacity .js-drugCapacity {
+    display: block;
+}
+
+.js-pointerFalse {
+    pointer-events: none;
+}
+
+.ritationDesktop {
+    @media (max-width: $screen-md-max) {
+        display: none;
+    }
+}
+
+.rotationMobile {
+    display: none;
+    @media (max-width: $screen-md-max) {
+        display: block;
+    }
+}
+
+.under_table_link {
+    font-style: italic;
+}
+
+.contentTop {
+    padding-bottom: 100px;
+    padding-top: 160px;
+
+    &__title {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $GPB;
+        font-size: 37px;
+        margin-bottom: 35px;
+        padding-top: 55px;
+    }
+    &__list {
+        list-style: none;
+
+        & .disableLink {
+            pointer-events: none;
+
+            &:before {
+                content: normal;
+            }
+        }
+        & li {
+             margin-bottom: 13px;
+        }
+        & a {
+            color: #fff;
+            position: relative;
+            padding-right: 20px;
+            display: inline;
+            transition: 0.3s;
+
+            &:hover {
+                color: #7425a7;
+                text-decoration: underline;
+
+                &:before {
+                    color: #7425a7;
+                }
+            }
+            &:before {
+                content: '>';
+                font-size: inherit;
+                position: absolute;
+                bottom: -1px;
+                right: 0;
+                color: #fff;
+            }
+        }
+    }
+    &__link {
+        & > a {
+            font-family: $GPB;
+            font-size: 24px;
+        }
+    }
+    &__link2 {
+        & > a {
+            font-family: $GPM;
+            font-size: 20px;
+        }
+    }
+    &__list2 {
+        padding-left: 50px;
+        list-style: none;
+        margin: 18px 0 8px;
+        @media(max-width: $screen-xs-max) {
+            padding-right: 5px;
+        }
+    }
+    &__list3 {
+        padding-left: 50px;
+        list-style: none;
+        margin: 18px 0 18px;
+        @media(max-width: $screen-xs-max) {
+            padding-right: 5px;
+        }
+    }
 }

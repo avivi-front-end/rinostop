@@ -36,6 +36,11 @@
         &__smallLogo {
             float: right;
             padding-top: 6px;
+            width: 100px;
+
+            & img {
+                width: 100%;
+            }
 
             @media (max-width: $screen-md-max) {
                 position: relative;

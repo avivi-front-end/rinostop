@@ -53,58 +53,29 @@ $(function() {
 
 $(document).ready(function() {
     var drugsBtn = $(".js-drugsBtn");
-    var drugsMenu = $(".js-drugsMenu");
 
     drugsBtn.mouseenter(function() {
-        drugsMenu.css("display", "block");
+        $(".js-drugsMenu").css("display", "block");
         drugsBtn.addClass("active");
     });
 
-    drugsMenu.mouseenter(function() {
-        $(this).addClass("active");
-    });
-
     drugsBtn.mouseleave(function() {
-        var target = $(this);
-        lostMause(target);
+        $(this).find(".js-drugsMenu").css("display", "none");
     })
 
-    drugsMenu.mouseleave(function() {
-        var target = $(this);
-        lostMause(target);
-    })
 
     var articlesBtn = $(".js-articlesBtn");
-    var articlesMenu = $(".js-articlesMenu");
 
     articlesBtn.mouseenter(function() {
-        articlesMenu.css("display", "block");a
-        articlesBtn.addClass("active");
-    });
-
-    articlesMenu.mouseenter(function() {
+        $(this).find(".js-articlesMenu").css("display", "block");
         $(this).addClass("active");
     });
 
     articlesBtn.mouseleave(function() {
-        var target = $(this);
-        lostMause(target);
+        $(this).find(".js-articlesMenu").css("display", "none");
+        $(this).removeClass('active');
     })
 
-    articlesMenu.mouseleave(function() {
-        var target = $(this);
-        lostMause(target);
-    })
-
-    var lostMause = function(target) {
-        target.removeClass("active");
-        if(!drugsBtn.hasClass("active") && !drugsMenu.hasClass("active")) {
-            drugsMenu.css("display", "none");
-        }
-        if(!articlesBtn.hasClass("active") && !articlesMenu.hasClass("active")) {
-            articlesMenu.css("display", "none");   
-        }
-    };
 
     $('.js-dignitySlider').slick({
         slidesToShow: 1,
@@ -176,4 +147,80 @@ $(document).ready(function() {
         $('body').animate({scrollTop: 0 }, 1000);
         console.log(toTop)
     })
+
+    $('.js-bannerBtn').on('click', function(e) {
+        e.preventDefault();
+        $('.js-banner').addClass('hiddenBanner');
+    })
+
+    $('.js-rotatitonZone').on('click', function(e) {
+        if($(e.target).closest('.js-rotationFalse').length == 0){
+            var elem1 = $('.js-drug1'),
+                elem2 = $('.js-drug2');
+            if(elem1.hasClass('js-frontItem')) {
+                $(this).addClass('js-pointerFalse');
+                elem1.addClass('backLeft');
+                elem1.removeClass('frontCenter');
+                elem1.removeClass('js-activeLabels');
+                elem2.removeClass('backTop');
+                elem2.addClass('frontRight');
+                elem2.removeClass('js-activeCapacity')
+                setTimeout(function() {
+                    elem1.removeClass('backLeft');
+                    elem1.removeClass('js-frontItem');
+                    elem1.addClass('backTop');
+                    elem2.removeClass('frontRight');
+                    elem2.addClass('frontCenter');
+                    elem2.addClass('js-frontItem');
+                }, 1000);
+                setTimeout(function() {
+                    elem2.addClass('js-activeLabels');
+                    elem1.addClass('js-activeCapacity');
+                    $('.js-rotatitonZone').removeClass('js-pointerFalse')
+                },2000);
+            } else {
+                $(this).addClass('js-pointerFalse');
+                elem2.addClass('backLeft');
+                elem2.removeClass('frontCenter');
+                elem2.removeClass('js-activeLabels');
+                elem1.removeClass('js-activeCapacity')
+                elem1.removeClass('backTop');
+                elem1.addClass('frontRight');
+                setTimeout(function() {
+                    elem2.removeClass('backLeft');
+                    elem2.removeClass('js-frontItem');
+                    elem2.addClass('backTop');
+                    elem1.removeClass('frontRight');
+                    elem1.addClass('frontCenter');
+                    elem1.addClass('js-frontItem');
+                }, 1000);
+                setTimeout(function() {
+                    elem1.addClass('js-activeLabels');
+                    elem2.addClass('js-activeCapacity');
+                    $('.js-rotatitonZone').removeClass('js-pointerFalse')
+                },2000);
+            }
+        }
+
+    })
+
+    // if(BX.getCookie('HideBaner') == 'Y'){
+    //     $('.js-banner').addClass('hiddenBanner');
+    // }
+
+    $('.js-questionBtn').on('click', function(e) {
+        e.preventDefault();
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).closest('.questionInfo__title').siblings('.js-questionText').slideUp();
+        } else {
+            $(this).addClass('active');
+            $(this).closest('.questionInfo__title').siblings('.js-questionText').slideDown();
+        }
+    })
+
+    $('.js-testBtn').on('click', function(e) {
+        
+    })
+
 })
