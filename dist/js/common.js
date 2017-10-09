@@ -75,7 +75,18 @@ $(document).ready(function() {
         $(this).find(".js-articlesMenu").css("display", "none");
         $(this).removeClass('active');
     })
-
+    articlesBtn.on('click', function(e) {
+      if ($(window).width() < 991) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).children('.js-articlesMenu').slideToggle();
+      }
+    });
+    $('.header__articlesMenu__item').on('click', function(e) {
+        if ($(window).width() < 991) {
+          e.stopPropagation();
+        }
+    });
 
     $('.js-dignitySlider').slick({
         slidesToShow: 1,
@@ -224,3 +235,7 @@ $(document).ready(function() {
     })
 
 })
+
+
+
+

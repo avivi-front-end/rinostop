@@ -199,7 +199,8 @@
             }
             & .rino10Top__drug__text {
                 top: 250px;
-                font-size: 12px;
+                font-size: 11px;
+                letter-spacing: 0.5px;
 
                 @media (max-width: $screen-sm-max)  {
                     top: auto;
